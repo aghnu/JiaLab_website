@@ -3,8 +3,7 @@ layout: default
 ---
 
 <div>
-    {%- include header.html -%}
-
+    {%- include header.html is_transparent=page.transparent_navi -%}
     <div class="page-content">
         {{ content }}
     </div>

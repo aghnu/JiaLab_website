@@ -3,10 +3,12 @@
     
     {%- include head.html -%}
 
+    <script>
+        var check_mobile = () => window
+            .matchMedia("only screen and (max-width: {{ site.on_mobile }})").matches;
+    </script>
     <body>
-
         {{ content }}
-    
     </body>
 
 </html>

@@ -12,11 +12,7 @@ $min-content-width:   800px !default;
 $content-width-ratio: 75% !default;
 
 // device detection
-$on-palm:             600px !default;
-$on-laptop:           800px !default;
-
-$on-medium:           $on-palm !default;
-$on-large:            $on-laptop !default;
+$on-palm:             {{ site.on_mobile }} !default;
 
 @mixin media-query($device) {
   @media screen and (max-width: $device) {

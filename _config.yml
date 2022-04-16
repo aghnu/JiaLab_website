@@ -38,6 +38,8 @@ collections:
 sass:
     sass_dir: _sass
 
+on_mobile: 600px
+
 # theme: minima
 # plugins:
 #   - jekyll-feed

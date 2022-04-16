@@ -20,6 +20,7 @@ $nav-item-sel-border-size:  2px !default;
   height: $header-height;
   background-color: $header-background-color;
   color: $header-text-color;
+  transition: 0.8s;
 }
 
 .site-header .site-header-body {
@@ -41,6 +42,10 @@ $nav-item-sel-border-size:  2px !default;
 
 .site-header-placefiller {
   height: $header-height;
+}
+
+.site-header.transparent {
+  background-color: transparent;
 }
 
 // nav.html stylings

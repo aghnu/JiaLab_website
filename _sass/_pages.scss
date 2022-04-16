@@ -5,7 +5,7 @@
 //      resource.html
 
 // defaults
-$banner-size-height:        600px !default;
+$banner-size-height:        650px !default;
 $banner-info-gap:           20px !default;
 $banner-info-title-size:    40px !default; 
 $banner-info-color:         #ffffff !default; 
@@ -14,7 +14,7 @@ $banner-button-color:       #55D7B8 !default;
 $banner-button-height:      52px !default;
 $banner-button-width:       210px !default;
 $banner-button-radius:      26px !default;
-$banner-button-margin-top:  90px !default;
+$banner-button-margin-top:  80px !default;
 $banner-button-text-size:   20px !default;
 $banner-button-text-color:  #000000;
 
@@ -37,7 +37,7 @@ $banner-button-text-color:  #000000;
     width: $content-width-ratio;
     max-width: $max-content-width;
     min-width: $min-content-width;
-    top: 50%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
