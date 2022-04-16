@@ -20,11 +20,7 @@ $nav-item-gap:              60px !default;
   color: $header-text-color;
 }
 
-.site-header .content-wrapper {
-  width: $content-width-ratio;
-  max-width: $max-content-width;
-  min-width: $min-content-width;
-  margin: auto;
+.site-header .site-header-body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;

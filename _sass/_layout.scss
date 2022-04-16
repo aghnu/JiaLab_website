@@ -1,0 +1,9 @@
+// layout styling
+
+.content-wrapper {
+    width: $content-width-ratio;
+    max-width: $max-content-width;
+    min-width: $min-content-width;
+    margin: auto;
+}
+
