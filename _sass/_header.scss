@@ -42,10 +42,20 @@ $nav-item-sel-border-size:  2px !default;
 
 .site-header-placefiller {
   height: $header-height;
+  background-color: $header-background-color;
+  transition: 0.8s;
 }
 
 .site-header.transparent {
   background-color: transparent;
+}
+
+.site-header.transparent.solid {
+  background-color: $header-background-color;;
+}
+
+.site-header.transparent + .site-header-placefiller {
+  height: 0;
 }
 
 // nav.html stylings
@@ -64,4 +74,16 @@ $nav-item-sel-border-size:  2px !default;
 .site-navigation .site-navigation-item.selected {
   border-bottom: solid;
   border-width: $nav-item-sel-border-size;
+}
+
+// mobile
+@include media-query($on-palm) {
+  // disable transparent effect
+  .site-header.transparent {
+    background-color: $header-background-color;
+  }
+
+  .site-header.transparent + .site-header-placefiller {
+    height: $header-height;
+  }
 }

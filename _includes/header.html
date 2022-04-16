@@ -17,51 +17,30 @@
 {% if is_transparent %}
 <script>
     // only if browser supports script
-    let scroll_position = 0;
-    let on_mobile = true;
     
+    // before page is rendered, remove filler and set nav bar to transparent
     window.addEventListener('DOMContentLoaded', () => {
         const site_header = document.querySelector('.site-header');
         const site_header_placefiller = document.querySelector('.site-header-placefiller');
-        if (!check_mobile()) {
-            on_mobile = false;
-            site_header_placefiller.style.display = "none";
-            site_header.classList.add("transparent");   
-        }
+        site_header.classList.add("transparent");
     });
 
+    // solid when scrolling down, transparent when close to top and scrolling up
+    let scroll_position = 0;
     window.addEventListener('scroll', () => {
         const site_header = document.querySelector('.site-header');
-        if (!on_mobile) {
-            if (scroll_position > this.scrollY) {
-                // up
-                if (this.scrollY <= 40) {
-                    site_header.classList.add("transparent");
-                }
-            } else {
-                // down
-                if (this.scrollY >= 100) {
-                    site_header.classList.remove("transparent");
-                }
+        if (scroll_position > this.scrollY) {
+            // up
+            if (this.scrollY <= 40) {
+                site_header.classList.remove("solid");
+            }
+        } else {
+            // down
+            if (this.scrollY >= 100) {
+                site_header.classList.add("solid");
             }
         }
         scroll_position = this.scrollY;
-    });
-
-    window.addEventListener('resize', () => {
-        const site_header = document.querySelector('.site-header');
-        const site_header_placefiller = document.querySelector('.site-header-placefiller');
-        if (check_mobile() !== on_mobile) {
-            if (check_mobile()) {
-                on_mobile = true;
-                site_header_placefiller.style.display = "";
-                site_header.classList.remove("transparent");
-            } else {
-                on_mobile = false;
-                site_header_placefiller.style.display = "none";
-                site_header.classList.add("transparent");
-            }            
-        }
     });
     
 </script>
