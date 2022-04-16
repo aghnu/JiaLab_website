@@ -9,42 +9,44 @@ layout: page
 
 
 <div class="page-team">
-    <div class="page-team-faculty">
-        {% for mem in mem_faculty %}
-        {% if mem.profile_photo_path != "" %}
-        <img src='/assets/photos/{{mem.profile_photo_path}}' class="profile_photo">
-        {% else %}
-        <img src='/assets/photos/default.png' class="profile_photo">
-        {{default.png}}
-        {% endif %}
-        <p>{{mem.name}}</p>
-        <p>{{mem.content}}</p>
-        {% endfor %}
-        
-    </div>
+    <div class="content-wrapper">
+        <div class="page-team-faculty">
+            {% for mem in mem_faculty %}
+            {% if mem.profile_photo_path != "" %}
+            <img src='/assets/photos/{{mem.profile_photo_path}}' class="profile_photo">
+            {% else %}
+            <img src='/assets/photos/default.png' class="profile_photo">
+            {{default.png}}
+            {% endif %}
+            <p>{{mem.name}}</p>
+            <p>{{mem.content}}</p>
+            {% endfor %}
+            
+        </div>
 
-    <div class="page-team-dr">
-        {% for mem in mem_dr %}
-        {% if mem.profile_photo_path != "" %}
-        <img src='/assets/photos/{{mem.profile_photo_path}}' class="profile_photo">
-        {% else %}
-        <img src='/assets/photos/default.png' class="profile_photo">
-        {{default.png}}
-        {% endif %}
-        <p>{{mem.name}}</p>
-        {% endfor %}
-    </div>
+        <div class="page-team-dr">
+            {% for mem in mem_dr %}
+            {% if mem.profile_photo_path != "" %}
+            <img src='/assets/photos/{{mem.profile_photo_path}}' class="profile_photo">
+            {% else %}
+            <img src='/assets/photos/default.png' class="profile_photo">
+            {{default.png}}
+            {% endif %}
+            <p>{{mem.name}}</p>
+            {% endfor %}
+        </div>
 
-    <div class="page-team-student">
-        {% for mem in mem_student %}
-        {% if mem.profile_photo_path != "" %}
-        <img src='/assets/photos/{{mem.profile_photo_path}}' class="profile_photo">
-        {% else %}
-        <img src='/assets/photos/default.png' class="profile_photo">
-        {{default.png}}
-        {% endif %}
-        <p>{{mem.name}}</p>
-        {% endfor %}
+        <div class="page-team-student">
+            {% for mem in mem_student %}
+            {% if mem.profile_photo_path != "" %}
+            <img src='/assets/photos/{{mem.profile_photo_path}}' class="profile_photo">
+            {% else %}
+            <img src='/assets/photos/default.png' class="profile_photo">
+            {{default.png}}
+            {% endif %}
+            <p>{{mem.name}}</p>
+            {% endfor %}
+        </div>
     </div>
 
 </div>

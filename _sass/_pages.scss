@@ -1,0 +1,68 @@
+// includes stylings of elements on
+//      index.html
+//      publication.html
+//      team.html
+//      resource.html
+
+// defaults
+$banner-size-height:        600px !default;
+$banner-info-gap:           20px !default;
+$banner-info-title-size:    40px !default; 
+$banner-info-color:         #ffffff !default; 
+
+$banner-button-color:       #55D7B8 !default;
+$banner-button-height:      52px !default;
+$banner-button-width:       210px !default;
+$banner-button-radius:      26px !default;
+$banner-button-margin-top:  90px !default;
+$banner-button-text-size:   20px !default;
+$banner-button-text-color:  #000000;
+
+// banner on research page/index.html
+.page-research-block-banner {
+    position: relative;
+    height: $banner-size-height;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.page-research-block-banner .banner-background {
+    min-width: 100vw;
+    min-height: $banner-size-height;
+    object-fit: contain;
+}
+
+.page-research-block-banner .banner-info-container {
+    position: absolute;
+    width: $content-width-ratio;
+    max-width: $max-content-width;
+    min-width: $min-content-width;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    gap: $banner-info-gap;
+}
+
+.page-research-block-banner .banner-info-container .title {
+    font-size: $banner-info-title-size;
+    color: $banner-info-color;
+    margin: 0;
+}
+
+.page-research-block-banner .banner-info-container .text {
+    color: $banner-info-color;
+    margin: 0;
+}
+
+.page-research-block-banner .banner-button {
+    width: $banner-button-width;
+    height: $banner-button-height;
+    border-radius: $banner-button-radius;
+    background-color: $banner-button-color;
+    margin-top: $banner-button-margin-top;
+    border: none;
+    color: $banner-button-text-color;
+    font-size: $banner-button-text-size;
+}
