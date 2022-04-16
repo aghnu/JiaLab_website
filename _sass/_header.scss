@@ -8,6 +8,7 @@ $header-height:             76px !default;
 
 $nav-item-size:             20px !default;
 $nav-item-gap:              60px !default;
+$nav-item-sel-border-size:  2px !default;
 
 // header.html stylings
 .site-header {
@@ -56,5 +57,5 @@ $nav-item-gap:              60px !default;
 
 .site-navigation .site-navigation-item.selected {
   border-bottom: solid;
-  border-width: 2px;
+  border-width: $nav-item-sel-border-size;
 }

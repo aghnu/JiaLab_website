@@ -1,8 +1,32 @@
 // footer.html
 
 //defaults
+$footer-text-size:              20px !default;
+$footer-text-gap-verti:         10px !default;
+$footer-padding:                28px !default;
+
+$footer-dividor-border-size:    1px !default;
+$footer-dividor-border-color:   #B6B6B6 !default;
 
 // footer.html stylings
 .site-footer {
-    
+  font-size: $footer-text-size;
+  border-top: solid;
+  border-width: $footer-dividor-border-size;
+  border-color: $footer-dividor-border-color;
+  padding: $footer-padding;
+  width: 100vw;
+}
+
+.site-footer .site-footer-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: $footer-text-gap-verti;
+}
+
+.site-footer .site-footer-body .text {
+  text-align: center;
+  line-height: $footer-text-size;
+  margin: 0;
 }
