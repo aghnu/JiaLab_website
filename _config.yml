@@ -34,6 +34,9 @@ collections:
   - publications
   - staff
 
+sass:
+    sass_dir: _sass
+
 # theme: minima
 # plugins:
 #   - jekyll-feed
