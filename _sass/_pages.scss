@@ -9,6 +9,7 @@ $banner-size-height:        650px !default;
 $banner-info-gap:           20px !default;
 $banner-info-title-size:    40px !default; 
 $banner-info-color:         #ffffff !default; 
+$banner-info-title-weight:  700 !default;
 
 $banner-button-color:       #55D7B8 !default;
 $banner-button-height:      52px !default;
@@ -47,6 +48,7 @@ $banner-button-text-color:  #000000;
 
 .page-research-block-banner .banner-info-container .title {
     font-size: $banner-info-title-size;
+    font-family: $banner-info-title-weight;
     color: $banner-info-color;
     margin: 0;
 }
