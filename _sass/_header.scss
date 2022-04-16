@@ -34,7 +34,7 @@ $nav-item-gap:              60px !default;
   margin: 0;
 }
 
-.site-header .site-header-logo .text{
+.site-header .site-header-logo .text {
   font-size: $logo-text-size;
   text-align: center;
   line-height: $logo-text-size;
@@ -53,8 +53,12 @@ $nav-item-gap:              60px !default;
   gap: $nav-item-gap;
 }
 
-.site-navigation .site-navigation-item{
+.site-navigation .site-navigation-item {
   text-decoration: none;
   color: $header-text-color;
 }
 
+.site-navigation .site-navigation-item.selected {
+  border-bottom: solid;
+  border-width: 2px;
+}
