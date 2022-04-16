@@ -20,7 +20,7 @@ $nav-item-sel-border-size:  2px !default;
   height: $header-height;
   background-color: $header-background-color;
   color: $header-text-color;
-  transition: 0.8s;
+  transition: background-color 0.8s;
 }
 
 .site-header .site-header-body {
@@ -43,7 +43,7 @@ $nav-item-sel-border-size:  2px !default;
 .site-header-placefiller {
   height: $header-height;
   background-color: $header-background-color;
-  transition: 0.8s;
+  transition: height 0.8s;
 }
 
 .site-header.transparent {
