@@ -3,16 +3,23 @@ permalink: /publication
 layout: page
 ---
 
+{% assign catalogues = site.publications | sort: 'index' %}
+
 <div class="page-publication">
     <div class="page-publication-block-navigation">
         <p class="title">Catalogue</p>
-        <div class="catalogues">
-
+        <div class="catalogues_container">
+            {% for cata in catalogues %}
+                <a class="catalogue" href="#{{cata.query_id}}">{{ cata.title }}</a>
+            {% endfor %}
         </div>
     </div>
 
     <div class="page-publication-block-body">
-        
+        {% for cata in catalogues %}
+        <p class="title" id="{{cata.query_id}}">{{cata.title}}</p>
+        {{cata.content}}
+        {% endfor %}
     </div>
 
 </div>

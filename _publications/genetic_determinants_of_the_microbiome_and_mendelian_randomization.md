@@ -1,5 +1,7 @@
 ---
 title: "Genetic determinants of the microbiome and mendelian randomization"
+query_id: "genetic_determinants_of_the_microbiome_and_mendelian_randomization"
+index: 4
 ---
 
 1.Liu X#, Tong X#, Zhu J, Tian L, Jie Z, Zou Y, Lin X, Liang H, Li W, Ju Y, Qin Y, Zou L, Lu H, Xu X, Yang H, Wang J, Zong Y, Liu W, Hou Y, Zhu S, Jin X, Jia H*, Zhang T*. Metagenome-genome-wide association studies reveal human genetic impact on the oral microbiome. Cell Discovery, 2021, 7, 117. Link-doi.org/10.1038/s41421-021-00356-0

@@ -1,5 +1,7 @@
 ---
 title: "Research articles"
+query_id: "research_articles"
+index: 2
 ---
 
 Reference gene catalogs and genome catalogs for the microbiome at various body sites:

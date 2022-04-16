@@ -1,5 +1,7 @@
 ---
 title: "Microbiome-based disease detection and intervention"
+query_id: "microbiome_based_disease_detection_and_intervention"
+index: 5
 ---
 
 1.Jie Z#,*, Liang S#, Ding Q#, Li F, Tang S, Sun X, Lin Y, Chen P, Cai K, Zhou H, Lu H, Wang X, Zhang T, Xiao L, Yang H, Wang J, Hou Y, Kristiansen K, Jia H*, Xu X. Disease trends in a young Chinese cohort according to fecal metagenome and plasma metabolites. Med Microecol 2021. Link-doi.org/10.1016/j.medmic.2021.100037

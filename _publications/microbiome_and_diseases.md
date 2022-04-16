@@ -1,5 +1,7 @@
 ---
 title: "Microbiome and diseases"
+query_id: "microbiome_and_diseases"
+index: 3
 ---
 
 1.Wang Q#, Sun Q#, Li X#, Wang Z#, Zheng H, Ju Y, Guo R, Peng S*, Jia H*. Linking gut microbiome to bone mineral density: a shotgun        metagenomic dataset from 361 elderly women. Gigabyte, 2021, 1. https://doi.org/10.46471/gigabyte.12.
