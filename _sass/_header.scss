@@ -1,0 +1,60 @@
+// header.html and nav.html
+
+// defaults
+$header-background-color: #000000 !default;
+$header-text-color:       #ffffff !default;
+$logo-text-size:            28px !default;
+$header-height:             76px !default;
+
+$nav-item-size:             20px !default;
+$nav-item-gap:              60px !default;
+
+// header.html stylings
+.site-header {
+  display: flex;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: $header-height;
+  background-color: $header-background-color;
+  color: $header-text-color;
+}
+
+.site-header .content-wrapper {
+  width: $content-width-ratio;
+  max-width: $max-content-width;
+  min-width: $min-content-width;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.site-header .site-header-logo {
+  margin: 0;
+}
+
+.site-header .site-header-logo .text{
+  font-size: $logo-text-size;
+  text-align: center;
+  line-height: $logo-text-size;
+  margin: 0;
+}
+
+.site-header-placefiller {
+  height: $header-height;
+}
+
+// nav.html stylings
+.site-navigation {
+  display: flex;
+  font-size: $nav-item-size;
+  flex-direction: row;
+  gap: $nav-item-gap;
+}
+
+.site-navigation .site-navigation-item{
+  text-decoration: none;
+  color: $header-text-color;
+}
+

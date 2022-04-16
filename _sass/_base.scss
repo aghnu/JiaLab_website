@@ -1,25 +1,12 @@
 // contains all the resets, variables, mixins, and utility classes
 
-@charset "utf-8";
-
-// defaults
-$base-font-size:   16px !default;
-
-// device detection
-$content-width:    800px !default;
-
-$on-palm:          600px !default;
-$on-laptop:        800px !default;
-
-$on-medium:        $on-palm !default;
-$on-large:         $on-laptop !default;
-
-@mixin media-query($device) {
-  @media screen and (max-width: $device) {
-    @content;
-  }
-}
-
 html {
     font-size: $base-font-size;
+    font-family: $base-font-family;
+    width: 100vw;
+}
+
+body {
+  margin: 0;
+  padding: 0;
 }
