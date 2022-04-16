@@ -2,19 +2,25 @@
 
 //defaults
 $footer-text-size:              20px !default;
+
+$footer-text-title-size:        24px !default;
+$footer-text-title-weight:      600 !default;
+
+$footer-text-contact-size:      18px !default;
+
+$footer-padding:                32px !default;
 $footer-text-gap-verti:         10px !default;
-$footer-padding:                28px !default;
 
 $footer-dividor-border-size:    1px !default;
 $footer-dividor-border-color:   #B6B6B6 !default;
 
 // footer.html stylings
 .site-footer {
-  font-size: $footer-text-size;
   border-top: solid;
   border-width: $footer-dividor-border-size;
   border-color: $footer-dividor-border-color;
-  padding: $footer-padding;
+  padding-top: $footer-padding;
+  margin-top: $footer-padding;
   width: 100vw;
 }
 
@@ -25,8 +31,24 @@ $footer-dividor-border-color:   #B6B6B6 !default;
   gap: $footer-text-gap-verti;
 }
 
+.site-footer .site-footer-body .title {
+  font-size: $footer-text-title-size;
+  font-weight: $footer-text-title-weight;
+  text-align: center;
+  line-height: $footer-text-title-size;
+  margin: 0;
+}
+
 .site-footer .site-footer-body .text {
+  font-size: $footer-text-size;
   text-align: center;
   line-height: $footer-text-size;
+  margin: 0;
+}
+
+.site-footer .site-footer-body .contact {
+  font-size: $footer-text-contact-size;
+  text-align: center;
+  line-height: $footer-text-contact-size;
   margin: 0;
 }
