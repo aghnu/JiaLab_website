@@ -15,9 +15,10 @@ $banner-info-title-weight:  700 !default;
 $banner-button-color:       #55D7B8 !default;
 $banner-button-height:      52px !default;
 $banner-button-width:       210px !default;
-$banner-button-radius:      26px !default;
+$banner-button-radius:      27px !default;
 $banner-button-margin-top:  80px !default;
-$banner-button-text-size:   16px !default;
+$banner-button-text-size:   20px !default;
+$banner-button-text-font:   $font-montserrat;
 $banner-button-text-color:  #000000;
 
 // research info
@@ -59,6 +60,19 @@ $resource-page-title-weight:            700;
 $resource-page-text-size:               $base-font-size;
 
 $resource-page-block-gap:               60px;
+
+// publication page
+$publication-page-title-size:               33px;
+$publication-page-title-weight:             700;
+
+$publication-page-text-size:                13px;
+
+$publication-page-block-gap:                60px;
+
+$publication-page-navigation-background:        #E7E7E7;
+$publication-page-navigation-item-color:        #000000;
+$publication-page-navigation-item-color-hover:  #55D7B8;
+$publication-page-navigation-item-size:         20px;
 
 // banner on research page/index.html
 .page-research-block-banner {
@@ -108,6 +122,8 @@ $resource-page-block-gap:               60px;
     border: none;
     color: $banner-button-text-color;
     font-size: $banner-button-text-size;
+    font-family: $banner-button-text-font;
+    text-transform: uppercase;
 }
 
 // research page intro
@@ -254,31 +270,75 @@ $resource-page-block-gap:               60px;
     flex-direction: column;
     margin-top: $resource-page-block-gap;
     margin-bottom: $resource-page-block-gap;
-    gap: $resource-page-block-gap;
+
+    .page-resource-block-intro {
+        .title {
+            font-size: $resource-page-title-size;
+            font-weight: $resource-page-title-weight;
+            text-transform: uppercase;
+            margin: 0;
+        }
+
+        .text {
+            font-size: $resource-page-text-size;
+        }
+    }
+
+    .page-resource-block-body {
+        .title {
+            font-size: $resource-page-title-size;
+            font-weight: $resource-page-title-weight;
+        }
+
+        .text {
+            font-size: $resource-page-text-size;
+        }
+    }
 }
 
-.page-resource .page-resource-block-intro {
-    .title {
-        font-size: $resource-page-title-size;
-        font-weight: $resource-page-title-weight;
-        margin: 0;
-        text-transform: uppercase;
+// publication page
+
+.page-publication {
+    margin-top: 0;
+    margin-bottom: $publication-page-block-gap;
+
+    .page-publication-block-navigation {
+        background-color: $publication-page-navigation-background;
+        padding-top: $publication-page-block-gap;
+        padding-bottom: $publication-page-block-gap;
+        .title {
+            margin: 0;
+            font-size: $publication-page-title-size;
+            font-weight: $publication-page-title-weight;
+            text-transform: uppercase;
+        }
+        .catalogues_container {
+            padding-top: $publication-page-title-size;
+            .catalogue {
+                text-decoration: none;
+                color: $publication-page-navigation-item-color; 
+                font-size: $publication-page-navigation-item-size;
+            }
+
+            .catalogue:hover {
+                color: $publication-page-navigation-item-color-hover; 
+            }
+
+            .catalogue:before {
+                content: "/";
+                color: $publication-page-navigation-item-color;
+            }
+        }
     }
 
-    .text {
-        font-size: $resource-page-text-size;
-        margin: 0;
-    }
-}
-.page-resource .page-resource-block-body {
-    .title {
-        font-size: $resource-page-title-size;
-        font-weight: $resource-page-title-weight;
-        margin: 0;
-    }
+    .page-publication-block-body {
+        .title {
+            font-size: $publication-page-title-size;
+            font-weight: $publication-page-title-weight;
+        }
 
-    .text {
-        font-size: $resource-page-text-size;
-        margin: 0;
+        .text {
+            font-size: $publication-page-text-size;
+        }
     }
 }

@@ -7,8 +7,8 @@ transparent_navi: false
 {% assign catalogues = site.publications | sort: 'index' %}
 
 <div class="page-publication">
-    <div class="content-wrapper">
-        <div class="page-publication-block-navigation">
+    <div class="page-publication-block-navigation">
+        <div class="content-wrapper">
             <p class="title">Catalogue</p>
             <div class="catalogues_container">
                 {% for cata in catalogues %}
@@ -16,11 +16,12 @@ transparent_navi: false
                 {% endfor %}
             </div>
         </div>
-
+    </div>
+    <div class="content-wrapper">
         <div class="page-publication-block-body">
             {% for cata in catalogues %}
-            <p class="title" id="{{cata.query_id}}">{{cata.title}}</p>
-            {{cata.content}}
+            <p class="title" id="{{cata.query_id}}">{{cata.title}}:</p>
+            <div class="text">{{cata.content}}</div>
             {% endfor %}
         </div>
     </div>
