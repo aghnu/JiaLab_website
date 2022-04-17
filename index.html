@@ -40,7 +40,18 @@ transparent_navi: true
         </div>
 
         <div class="page-research-block-gallery">
-
+            {% for figure in site.data.research_page_figure_index %}
+            <p class="title">{{figure.title}}</p>
+            <img src="{{figure.source}}" class="figure">
+            <p class="caption">{{figure.caption}}</p>
+            {% endfor %}
         </div>
     </div>
 </div>
+
+<script>
+    // optional script for additional functionalities
+
+    // pop-up modal
+
+</script>
