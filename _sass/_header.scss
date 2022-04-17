@@ -3,7 +3,7 @@
 // defaults
 $header-background-color: #000000 !default;
 $header-text-color:       #ffffff !default;
-$logo-text-size:            24px !default;
+$logo-text-size:            28px !default;
 $logo-text-weight:          700;
 $header-height:             64px !default;
 
@@ -34,6 +34,10 @@ $font-family:               $font-montserrat;
 
   .site-header-logo {
     margin: 0;
+    .link {
+      text-decoration: none;
+      color: $header-text-color;
+    }
     .text {
       font-size: $logo-text-size;
       font-weight: $logo-text-weight;
