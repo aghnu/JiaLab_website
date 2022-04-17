@@ -6,68 +6,69 @@
 
 // defaults
 // research banner
-$banner-size-height:        600px !default;
-$banner-info-gap:           20px !default;
-$banner-info-title-size:    36px !default; 
-$banner-info-color:         #ffffff !default; 
-$banner-info-title-weight:  700 !default;
+$banner-size-height:                            600px !default;
+$banner-info-gap:                               20px !default;
+$banner-info-title-size:                        36px !default; 
+$banner-info-color:                             #ffffff !default; 
+$banner-info-title-weight:                      700 !default;
+$banner-font:                                   $font-poppins;
 
-$banner-button-color:       #55D7B8 !default;
-$banner-button-height:      52px !default;
-$banner-button-width:       210px !default;
-$banner-button-radius:      27px !default;
-$banner-button-margin-top:  80px !default;
-$banner-button-text-size:   20px !default;
-$banner-button-text-font:   $font-montserrat;
-$banner-button-text-color:  #000000;
+$banner-button-color:                           #55D7B8 !default;
+$banner-button-height:                          52px !default;
+$banner-button-width:                           210px !default;
+$banner-button-radius:                          27px !default;
+$banner-button-margin-top:                      80px !default;
+$banner-button-text-size:                       20px !default;
+$banner-button-text-font:                       $font-montserrat;
+$banner-button-text-color:                      #000000;
 
 // research info
-$research-info-gap:             55px !default;
-$research-info-separator-color: #B6B6B6;
-$research-info-separator-width: 1px;
+$research-info-gap:                             35px !default;
+$research-info-separator-color:                 #B6B6B6;
+$research-info-separator-width:                 1px;
 
-$research-info-text-title-size: 28px;
-$research-info-text-title-weight: 600;
-$research-info-text-size:       $base-font-size;
+$research-info-text-title-size:                 28px;
+$research-info-text-title-weight:               500;
+$research-info-text-size:                       $base-font-size;
 
-$research-info-figure-height:       180px;
-$research-info-figure-width:        240px;
-$research-info-figure-margin-right: 30px;
+$research-info-figure-height:                   180px;
+$research-info-figure-width:                    240px;
+$research-info-figure-margin-right:             30px;
 
 // team page
-$team-profile-pic-size-faculty:     236px;
-$team-profile-pic-size-team:        130px;
+$team-profile-pic-size-faculty:                 236px;
+$team-profile-pic-size-team:                    130px;
 
-$team-block-gap:                        60px;
+$team-block-gap:                                60px;
 
-$team-page-separator-width:             1px;
-$team-page-separator-color:             #B6B6B6;
+$team-page-separator-width:                     1px;
+$team-page-separator-color:                     #B6B6B6;
 
-$team-faculty-info-title-size:          33px;
-$team-faculty-info-title-weight:        700;
-$team-faculty-info-figure-margin-right: 50px;
+$team-faculty-info-title-size:                  33px;
+$team-faculty-info-title-weight:                700;
+$team-faculty-info-figure-margin-right:         50px;
 
-$team-group-label-size:                 33px;
-$team-group-label-weight:               700;
-$team-group-profile-gap:                60px;
-$team-group-profile-gap-row:            50px;
-$team-group-section-width:              calc(#{$team-profile-pic-size-team} + 5px);
+$team-group-label-size:                         33px;
+$team-group-label-weight:                       700;
+$team-group-profile-gap:                        60px;
+$team-group-profile-gap-row:                    50px;
+$team-group-section-width:                      calc(#{$team-profile-pic-size-team} + 5px);
 
 // resource page
-$resource-page-title-size:              33px;
-$resource-page-title-weight:            700;
+$resource-page-title-size:                      33px;
+$resource-page-title-weight:                    700;
 
-$resource-page-text-size:               $base-font-size;
+$resource-page-text-size:                       $base-font-size;
 
-$resource-page-block-gap:               60px;
+$resource-page-block-gap:                       60px;
 
 // publication page
-$publication-page-title-size:               33px;
-$publication-page-title-weight:             700;
+$publication-page-title-size:                   33px;
+$publication-page-title-weight:                 700;
 
-$publication-page-text-size:                13px;
+$publication-page-text-size:                    16px;
 
-$publication-page-block-gap:                60px;
+$publication-page-block-gap:                    60px;
 
 $publication-page-navigation-background:        #E7E7E7;
 $publication-page-navigation-item-color:        #000000;
@@ -99,11 +100,12 @@ $publication-page-navigation-item-size:         20px;
     display: flex;
     flex-direction: column;
     gap: $banner-info-gap;
+    font-family: $banner-font;
 }
 
 .page-research-block-banner .banner-info-container .title {
     font-size: $banner-info-title-size;
-    font-family: $banner-info-title-weight;
+    font-weight: $banner-info-title-weight;
     color: $banner-info-color;
     margin: 0;
 }
@@ -142,6 +144,7 @@ $publication-page-navigation-item-size:         20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: $research-info-gap;
 }
 
 .page-research-block-intro .section .info .title {

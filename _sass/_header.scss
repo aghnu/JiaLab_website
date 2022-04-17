@@ -4,11 +4,14 @@
 $header-background-color: #000000 !default;
 $header-text-color:       #ffffff !default;
 $logo-text-size:            24px !default;
+$logo-text-weight:          700;
 $header-height:             64px !default;
 
 $nav-item-size:             16px !default;
 $nav-item-gap:              60px !default;
 $nav-item-sel-border-size:  2px !default;
+
+$font-family:               $font-montserrat;
 
 // header.html stylings
 .site-header {
@@ -17,42 +20,45 @@ $nav-item-sel-border-size:  2px !default;
   z-index: 1000;
   top: 0;
   width: 100vw;
-  font-family: $font-montserrat;
+  font-family: $font-family;
   height: $header-height;
   background-color: $header-background-color;
   color: $header-text-color;
   transition: background-color 0.8s;
+
+  .site-header-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .site-header-logo {
+    margin: 0;
+    .text {
+      font-size: $logo-text-size;
+      font-weight: $logo-text-weight;
+      text-align: center;
+      line-height: $logo-text-size;
+      margin: 0;      
+    }
+  }
 }
 
-.site-header .site-header-body {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.site-header .site-header-logo {
-  margin: 0;
-}
-
-.site-header .site-header-logo .text {
-  font-size: $logo-text-size;
-  text-align: center;
-  line-height: $logo-text-size;
-  margin: 0;
-}
-
-.site-header-placefiller {
-  height: $header-height;
-  background-color: $header-background-color;
-  transition: height 0.8s;
-}
-
+// transparent styling
 .site-header.transparent {
   background-color: transparent;
 }
 
 .site-header.transparent.solid {
   background-color: $header-background-color;;
+}
+
+// styling for placefiller, same height same color, 
+// used to occupy space for the navigation bar
+.site-header-placefiller {
+  height: $header-height;
+  background-color: $header-background-color;
+  transition: height 0.8s;
 }
 
 .site-header.transparent + .site-header-placefiller {
