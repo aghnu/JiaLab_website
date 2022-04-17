@@ -6,12 +6,12 @@
 // defaults
 $font-poppins:        'Poppins', Arial, sans-serif !default;
 $font-montserrat:     'Montserrat', Arial, sans-serif !default;
-$base-font-size:      20px !default;
+$base-font-size:      16px !default;
 $base-font-weight:    400 !default;
 
 $max-content-width:   1366px !default;
 $min-content-width:   800px !default;
-$content-width-ratio: 75% !default;
+$content-width-ratio: 65% !default;
 
 // device detection
 $on-palm:             {{ site.on_mobile }} !default;

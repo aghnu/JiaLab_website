@@ -5,9 +5,10 @@
 //      resource.html
 
 // defaults
-$banner-size-height:        690px !default;
+// research banner
+$banner-size-height:        600px !default;
 $banner-info-gap:           20px !default;
-$banner-info-title-size:    40px !default; 
+$banner-info-title-size:    36px !default; 
 $banner-info-color:         #ffffff !default; 
 $banner-info-title-weight:  700 !default;
 
@@ -16,8 +17,28 @@ $banner-button-height:      52px !default;
 $banner-button-width:       210px !default;
 $banner-button-radius:      26px !default;
 $banner-button-margin-top:  80px !default;
-$banner-button-text-size:   20px !default;
+$banner-button-text-size:   16px !default;
 $banner-button-text-color:  #000000;
+
+// research info
+$research-info-gap:             55px !default;
+$research-info-separator-color: #B6B6B6;
+$research-info-separator-width: 1px;
+
+$research-info-text-title-size: 28px;
+$research-info-text-title-weight: 600;
+$research-info-text-size:       $base-font-size;
+
+$research-info-figure-height:       180px;
+$research-info-figure-width:        240px;
+$research-info-figure-margin-right: 30px;
+
+// team page
+$team-profile-pic-size-faculty:     236px;
+$team-profile-pic-size-team:        130px;
+
+$team-block-gap:                        80px;
+$team-faculty-info-figure-margin-right: 50px;
 
 // banner on research page/index.html
 .page-research-block-banner {
@@ -68,3 +89,105 @@ $banner-button-text-color:  #000000;
     color: $banner-button-text-color;
     font-size: $banner-button-text-size;
 }
+
+// research page intro
+.page-research-block-intro {
+    margin-top: $research-info-gap;
+    margin-bottom: $research-info-gap;
+}
+
+.page-research-block-intro .section {
+    display: flex;
+    flex-direction: row;
+    gap: $research-info-figure-margin-right;
+}
+
+.page-research-block-intro .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.page-research-block-intro .section .info .title {
+    font-size: $research-info-text-title-size;
+    font-weight: $research-info-text-title-weight;
+    margin: 0;
+}
+
+.page-research-block-intro .section .info .text {
+    font-size: $research-info-text-size;
+    margin: 0;
+}
+
+.page-research-block-intro .section .figure {
+    max-width: $research-info-figure-width;
+    max-height: $research-info-figure-height;
+    object-fit: contain;
+}
+
+.page-research-block-intro .separator {
+    margin-top: $research-info-gap;
+    margin-bottom: $research-info-gap;
+    border-bottom: solid;
+    border-width: $research-info-separator-width;
+    border-color: $research-info-separator-color;
+}
+
+// team page
+
+.page-team {
+    margin-top: $team-block-gap;
+    margin-bottom: $team-block-gap;
+}
+
+.page-team .profile_photo {
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.page-team .separator {
+    border-bottom: solid;
+    border-width: 1px;
+    border-color: #B6B6B6;
+    margin-top: $team-block-gap;
+    margin-bottom: $team-block-gap;
+    width: calc(100% - #{$team-faculty-info-figure-margin-right} - #{$team-profile-pic-size-faculty});
+    margin-right: 0;
+    margin-left: auto;
+}
+
+.page-team .page-team-faculty .section {
+    display: flex;
+    flex-direction: row;
+    gap: $team-faculty-info-figure-margin-right;
+}
+
+.page-team .page-team-faculty .section {
+    display: flex;
+    flex-direction: row;
+    gap: $team-faculty-info-figure-margin-right;
+}
+
+.page-team .page-team-faculty .section .title {
+    font-size: 33px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.page-team .page-team-faculty .section .text {
+    margin: 0;
+}
+
+
+.page-team .page-team-faculty .profile_photo {
+    margin: auto;
+    width: $team-profile-pic-size-faculty;
+    height: $team-profile-pic-size-faculty;
+}
+
+.page-team .page-team-dr .profile_photo,
+.page-team .page-team-student .profile_photo {
+    width: $team-profile-pic-size-team;
+    height: $team-profile-pic-size-team;
+}
+

@@ -13,19 +13,25 @@ transparent_navi: false
     <div class="content-wrapper">
         <div class="page-team-faculty">
             {% for mem in mem_faculty %}
-            {% if mem.profile_photo_path != "" %}
-            <img src='/assets/photos/{{mem.profile_photo_path}}' class="profile_photo">
-            {% else %}
-            <img src='/assets/photos/default.png' class="profile_photo">
-            {{default.png}}
-            {% endif %}
-            <p>{{mem.name}}</p>
-            <p>{{mem.content}}</p>
+            <div class="section">
+                {% if mem.profile_photo_path != "" %}
+                <img src='/assets/photos/{{mem.profile_photo_path}}' class="profile_photo">
+                {% else %}
+                <img src='/assets/photos/default.png' class="profile_photo">
+                {{default.png}}
+                {% endif %}
+                <div class="info">
+                    <p class="title">{% if mem.title %}{{mem.title}}{% endif %} {{mem.name}}</p>
+                    <p class="text">{{mem.content}}</p>
+                    
+                </div>
+            </div>
             {% endfor %}
-            
+            <div class="separator"></div>
         </div>
-
+        
         <div class="page-team-dr">
+            <p class="group">Dr.</p>
             {% for mem in mem_dr %}
             {% if mem.profile_photo_path != "" %}
             <img src='/assets/photos/{{mem.profile_photo_path}}' class="profile_photo">
@@ -36,8 +42,9 @@ transparent_navi: false
             <p>{{mem.name}}</p>
             {% endfor %}
         </div>
-
+        
         <div class="page-team-student">
+            <p class="group">Student</p>
             {% for mem in mem_student %}
             {% if mem.profile_photo_path != "" %}
             <img src='/assets/photos/{{mem.profile_photo_path}}' class="profile_photo">
