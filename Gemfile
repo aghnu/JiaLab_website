@@ -29,3 +29,5 @@ gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
 
 # seo
 gem 'jekyll-seo-tag'
+
+gem "webrick", "~> 1.7"
