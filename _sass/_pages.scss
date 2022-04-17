@@ -48,9 +48,17 @@ $team-faculty-info-figure-margin-right: 50px;
 
 $team-group-label-size:                 33px;
 $team-group-label-weight:               700;
-$team-group-profile-gap:                70px;
-$team-group-profile-gap-row:            60px;
-$team-group-section-width:              calc(#{$team-profile-pic-size-team} + 10px);
+$team-group-profile-gap:                60px;
+$team-group-profile-gap-row:            50px;
+$team-group-section-width:              calc(#{$team-profile-pic-size-team} + 5px);
+
+// resource page
+$resource-page-title-size:              33px;
+$resource-page-title-weight:            700;
+
+$resource-page-text-size:               $base-font-size;
+
+$resource-page-block-gap:               60px;
 
 // banner on research page/index.html
 .page-research-block-banner {
@@ -239,3 +247,37 @@ $team-group-section-width:              calc(#{$team-profile-pic-size-team} + 10
     text-align: center;
 }
 
+// resource page
+
+.page-resource .content-body{
+    display: flex;
+    flex-direction: column;
+    margin-top: $resource-page-block-gap;
+    margin-bottom: $resource-page-block-gap;
+    gap: $resource-page-block-gap;
+}
+
+.page-resource .page-resource-block-intro {
+    .title {
+        font-size: $resource-page-title-size;
+        font-weight: $resource-page-title-weight;
+        margin: 0;
+    }
+
+    .text {
+        font-size: $resource-page-text-size;
+        margin: 0;
+    }
+}
+.page-resource .page-resource-block-body {
+    .title {
+        font-size: $resource-page-title-size;
+        font-weight: $resource-page-title-weight;
+        margin: 0;
+    }
+
+    .text {
+        font-size: $resource-page-text-size;
+        margin: 0;
+    }
+}
