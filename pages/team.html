@@ -32,28 +32,36 @@ transparent_navi: false
         
         <div class="page-team-dr">
             <p class="group">Dr.</p>
-            {% for mem in mem_dr %}
-            {% if mem.profile_photo_path != "" %}
-            <img src='/assets/photos/{{mem.profile_photo_path}}' class="profile_photo">
-            {% else %}
-            <img src='/assets/photos/default.png' class="profile_photo">
-            {{default.png}}
-            {% endif %}
-            <p>{{mem.name}}</p>
-            {% endfor %}
+            <div class="block">
+                {% for mem in mem_dr %}
+                <div class="section">
+                    {% if mem.profile_photo_path != "" %}
+                    <img src='/assets/photos/{{mem.profile_photo_path}}' class="profile_photo">
+                    {% else %}
+                    <img src='/assets/photos/default.png' class="profile_photo">
+                    {{default.png}}
+                    {% endif %}
+                    <p class="text">{{mem.name}}</p>
+                </div>
+                {% endfor %}
+            </div>
         </div>
-        
+        <div class="separator"></div>
         <div class="page-team-student">
             <p class="group">Student</p>
-            {% for mem in mem_student %}
-            {% if mem.profile_photo_path != "" %}
-            <img src='/assets/photos/{{mem.profile_photo_path}}' class="profile_photo">
-            {% else %}
-            <img src='/assets/photos/default.png' class="profile_photo">
-            {{default.png}}
-            {% endif %}
-            <p>{{mem.name}}</p>
-            {% endfor %}
+            <div class="block">
+                {% for mem in mem_student %}
+                <div class="section">
+                    {% if mem.profile_photo_path != "" %}
+                    <img src='/assets/photos/{{mem.profile_photo_path}}' class="profile_photo">
+                    {% else %}
+                    <img src='/assets/photos/default.png' class="profile_photo">
+                    {{default.png}}
+                    {% endif %}
+                    <p class="text">{{mem.name}}</p>
+                </div>
+                {% endfor %}
+            </div>
         </div>
     </div>
 

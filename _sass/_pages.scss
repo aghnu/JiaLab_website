@@ -37,8 +37,20 @@ $research-info-figure-margin-right: 30px;
 $team-profile-pic-size-faculty:     236px;
 $team-profile-pic-size-team:        130px;
 
-$team-block-gap:                        80px;
+$team-block-gap:                        60px;
+
+$team-page-separator-width:             1px;
+$team-page-separator-color:             #B6B6B6;
+
+$team-faculty-info-title-size:          33px;
+$team-faculty-info-title-weight:        700;
 $team-faculty-info-figure-margin-right: 50px;
+
+$team-group-label-size:                 33px;
+$team-group-label-weight:               700;
+$team-group-profile-gap:                70px;
+$team-group-profile-gap-row:            60px;
+$team-group-section-width:              calc(#{$team-profile-pic-size-team} + 10px);
 
 // banner on research page/index.html
 .page-research-block-banner {
@@ -147,8 +159,8 @@ $team-faculty-info-figure-margin-right: 50px;
 
 .page-team .separator {
     border-bottom: solid;
-    border-width: 1px;
-    border-color: #B6B6B6;
+    border-width: $team-page-separator-width;
+    border-color: $team-page-separator-color;
     margin-top: $team-block-gap;
     margin-bottom: $team-block-gap;
     width: calc(100% - #{$team-faculty-info-figure-margin-right} - #{$team-profile-pic-size-faculty});
@@ -169,8 +181,8 @@ $team-faculty-info-figure-margin-right: 50px;
 }
 
 .page-team .page-team-faculty .section .title {
-    font-size: 33px;
-    font-weight: 700;
+    font-size: $team-faculty-info-title-size;
+    font-weight: $team-faculty-info-title-weight;
     margin: 0;
 }
 
@@ -178,16 +190,52 @@ $team-faculty-info-figure-margin-right: 50px;
     margin: 0;
 }
 
-
 .page-team .page-team-faculty .profile_photo {
     margin: auto;
     width: $team-profile-pic-size-faculty;
     height: $team-profile-pic-size-faculty;
 }
 
+// dr and student sections
+
 .page-team .page-team-dr .profile_photo,
 .page-team .page-team-student .profile_photo {
     width: $team-profile-pic-size-team;
     height: $team-profile-pic-size-team;
+}
+
+.page-team .page-team-dr,
+.page-team .page-team-student {
+    display: flex;
+    flex-direction: row;
+}
+
+.page-team .page-team-dr .group,
+.page-team .page-team-student .group {
+    width: calc(#{$team-faculty-info-figure-margin-right} + #{$team-profile-pic-size-faculty});
+    font-size: $team-group-label-size;
+    font-weight: $team-group-label-weight;
+}
+
+.page-team .page-team-dr .block,
+.page-team .page-team-student .block{
+    width: calc(100% - #{$team-faculty-info-figure-margin-right} - #{$team-profile-pic-size-faculty});
+    display: flex;
+    flex-direction: row;
+    column-gap: $team-group-profile-gap;
+    row-gap: $team-group-profile-gap-row;
+    flex-wrap: wrap;
+}
+
+.page-team .page-team-dr .section,
+.page-team .page-team-student .section{
+    width: $team-group-section-width;
+}
+
+.page-team .page-team-dr .text,
+.page-team .page-team-student .text{
+    margin: 0;
+    margin-top: 10px;
+    text-align: center;
 }
 
