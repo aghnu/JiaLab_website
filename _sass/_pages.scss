@@ -372,13 +372,13 @@ $gallery_figure_title-size: 16px;
                 margin: $gallery_section_padding;
             }
 
-            .title {
-                height: $gallery_figure_title_height;
-                margin: $gallery_section_padding;
-                font-size: $gallery_figure_title-size;
-                text-align: center;
-            }   
-        } 
+
+        }
+        .title {
+            height: $gallery_figure_title_height;
+            font-size: $gallery_figure_title-size;
+            text-align: center;
+        }   
     }
 
 
