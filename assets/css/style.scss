@@ -24,7 +24,9 @@ $on-palm:             {{ site.on_mobile }} !default;
 
 // Imports
 @import
-  "fonts",
+  "fonts_montserrat",
+  "fonts_poppins",
+  "fonts_roboto",
   "base",
   "layout",
   "header",

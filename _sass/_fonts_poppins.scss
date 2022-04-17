@@ -98,6 +98,13 @@
     src: url(../fonts/Poppins/Poppins-Bold.ttf) format("truetype");
 }
 
+@font-face {
+    font-family: "Poppins";
+    font-style: italic;
+    font-weight: 700;
+    src: url(../fonts/Poppins/Poppins-BoldItalic.ttf) format("truetype");
+}
+
 /* extra bold */
 @font-face {
     font-family: "Poppins";
@@ -126,14 +133,4 @@
     font-style: italic;
     font-weight: 900;
     src: url(../fonts/Poppins/Poppins-BlackItalic.ttf) format("truetype");
-}
-
-/* Montserrat */
-
-/* regular */
-@font-face {
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 400;
-    src: url(../fonts/Montserrat/Montserrat-Regular.ttf) format("truetype");
 }
