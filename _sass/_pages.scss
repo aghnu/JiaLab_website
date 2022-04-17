@@ -354,7 +354,7 @@ $gallery_figure_title-size: 16px;
 
 // research page slideshow
 .page-research-block-gallery {
-    height: calc(#{$gallery_figure_height} + #{$gallery_figure_title_height} + (#{$gallery_section_padding} * 3));
+    height: calc(#{$gallery_figure_height} + #{$gallery_figure_title_height} + (#{$gallery_section_padding} * 4));
     display: flex;
     flex-direction: row;
     overflow: auto;
@@ -374,7 +374,7 @@ $gallery_figure_title-size: 16px;
 
             .title {
                 height: $gallery_figure_title_height;
-                margin-top: $gallery_section_padding;
+                margin: $gallery_section_padding;
                 font-size: $gallery_figure_title-size;
                 text-align: center;
             }   
