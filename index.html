@@ -10,7 +10,7 @@ transparent_navi: true
         <div class="banner-info-container">
             <p class="title">We use state-of-the-art OMICS technologies to understand the human microbiome</p>
             <p class="text">which will ultimately lead to better prevention and treatment of human diseases.The field is naturally interdisciplinary.</p>
-            <button type="button" class="banner-button">Contact Us</button>
+            <button type="button" class="banner-button" title="EMAIL: {{ site.email }}">Contact Us</button>
         </div>
     </div>
     <div class="content-wrapper">
@@ -41,9 +41,12 @@ transparent_navi: true
 
         <div class="page-research-block-gallery">
             {% for figure in site.data.research_page_figure_index %}
-            <p class="title">{{figure.title}}</p>
-            <img src="{{figure.source}}" class="figure">
-            <p class="caption">{{figure.caption}}</p>
+            <div class="section">
+                <div class="figure_container">
+                    <img src="{{figure.source}}" title="{{figure.caption}}" class="figure">    
+                </div>
+                <p class="title">{{figure.title}}</p>
+            </div>  
             {% endfor %}
         </div>
     </div>
