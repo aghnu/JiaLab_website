@@ -3,16 +3,16 @@
 .content-wrapper {
     width: $content-width-ratio;
     max-width: $max-content-width;
-    min-width: $min-content-width;
+    min-width: calc(#{$min-content-width} - 50px);
     margin: auto;
 }
 
 // mobile
 @include media-query($on-palm) {
     .content-wrapper {
-        width: $content-width-ratio-mobile;
-        max-width: $max-content-width-mobile;
-        min-width: $min-content-width-mobile;
+        width: calc(100% - 50px);
+        max-width: unset;
+        min-width: unset;
         margin: auto;
     }
 }

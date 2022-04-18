@@ -8,7 +8,7 @@ $logo-text-weight:          500;
 $header-height:             64px !default;
 
 $nav-item-size:             16px !default;
-$nav-item-gap:              60px !default;
+$nav-item-gap:              40px !default;
 $nav-item-sel-border-size:  2px !default;
 
 $font-family:               $font-montserrat;
@@ -91,11 +91,14 @@ $font-family:               $font-montserrat;
 // mobile
 @include media-query($on-palm) {
   // disable transparent effect
-  .site-header.transparent {
+  .site-header.transparent,
+  .site-header {
     background-color: $header-background-color;
   }
 
+  .site-header + .site-header-placefiller,
   .site-header.transparent + .site-header-placefiller {
     height: $header-height;
   }
+
 }

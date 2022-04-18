@@ -90,12 +90,12 @@ $publication-page-navigation-item-size:         20px;
 
 .page-research-block-banner .banner-info-container {
     position: absolute;
-    width: $content-width-ratio;
-    max-width: $max-content-width;
-    min-width: $min-content-width;
+    // width: $content-width-ratio;
+    // max-width: $max-content-width;
+    // min-width: $min-content-width;
     top: 55%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    // left: 50%;
+    transform: translate(0%, -50%);
     display: flex;
     flex-direction: column;
     gap: $banner-info-gap;
