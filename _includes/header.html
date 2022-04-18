@@ -54,10 +54,11 @@
 {% endif %}
 
 <script>
-    window.addEventListener('load', () => {
+    // optional script for when JS is enabled to improve user experience
 
+    window.addEventListener('load', () => {
         // use javascript to replace css navigation control
-        const nav_button = document.querySelector(".site-header-nav-icon");
+        // replace how close button is handled
         const nav_close_icon = document.querySelector("#site-header-nav-close-icon");
         const site_header_nav = document.querySelector(".site-header-nav");
 
@@ -68,6 +69,8 @@
             p.appendChild(site_header_nav);
         });
     });
+
+
 </script>
 
 

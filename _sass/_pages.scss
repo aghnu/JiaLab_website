@@ -69,6 +69,7 @@ $publication-page-title-weight:                 700;
 $publication-page-text-size:                    16px;
 
 $publication-page-block-gap:                    60px;
+$publication-scroll-margin-top:                 120px !default;
 
 $publication-page-navigation-background:        #E7E7E7;
 $publication-page-navigation-item-color:        #000000;
@@ -337,6 +338,10 @@ $publication-page-navigation-item-size:         20px;
     }
 
     .page-publication-block-body {
+        .section {
+            scroll-margin-top: $publication-scroll-margin-top;
+        }
+
         .title {
             font-size: $publication-page-title-size;
             font-weight: $publication-page-title-weight;
