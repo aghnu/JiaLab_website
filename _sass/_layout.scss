@@ -7,3 +7,13 @@
     margin: auto;
 }
 
+// mobile
+@include media-query($on-palm) {
+    .content-wrapper {
+        width: $content-width-ratio-mobile;
+        max-width: $max-content-width-mobile;
+        min-width: $min-content-width-mobile;
+        margin: auto;
+    }
+}
+

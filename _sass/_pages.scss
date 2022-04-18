@@ -79,12 +79,11 @@ $publication-page-navigation-item-size:         20px;
 .page-research-block-banner {
     position: relative;
     height: $banner-size-height;
-    width: 100vw;
     overflow: hidden;
 }
 
 .page-research-block-banner .banner-background {
-    min-width: 100vw;
+    min-width: 100%;
     min-height: $banner-size-height;
     object-fit: contain;
 }
@@ -357,7 +356,7 @@ $gallery_figure_title-size: 16px;
     height: calc(#{$gallery_figure_height} + #{$gallery_figure_title_height} + (#{$gallery_section_padding} * 4));
     display: flex;
     flex-direction: row;
-    overflow: auto;
+    overflow-x: scroll;
 
     .section {
         .figure_container {

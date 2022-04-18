@@ -38,7 +38,7 @@ collections:
 sass:
     sass_dir: _sass
 
-on_mobile: 600px
+on_mobile: 800px
 
 plugins:
   - jekyll-seo-tag

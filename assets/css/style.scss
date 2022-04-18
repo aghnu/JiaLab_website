@@ -4,20 +4,25 @@
 @charset "utf-8";
 
 // defaults
-$font-poppins:        'Poppins', Arial, sans-serif !default;
-$font-montserrat:     'Montserrat', Arial, sans-serif !default;
-$font-roboto:         'Roboto', Arial, sans-serif !default;
-$base-font-size:      16px !default;
-$base-font-weight:    400 !default;
+$font-poppins:                    'Poppins', Arial, sans-serif !default;
+$font-montserrat:                 'Montserrat', Arial, sans-serif !default;
+$font-roboto:                     'Roboto', Arial, sans-serif !default;
+$base-font-size:                  16px !default;
+$base-font-weight:                400 !default;
 
-$base-font-family:           $font-roboto !default;
+$base-font-family:                $font-roboto !default;
 
-$max-content-width:   1366px !default;
-$min-content-width:   800px !default;
-$content-width-ratio: 65% !default;
+$max-content-width:               1366px !default;
+$min-content-width:               {{ site.on_mobile }} !default;
+$content-width-ratio:             65% !default;
+
+$max-content-width-mobile:        {{ site.on_mobile }} !default;
+$min-content-width-mobile:        200px !default;
+$content-width-ratio-mobile:      80% !default;
+
 
 // device detection
-$on-palm:             {{ site.on_mobile }} !default;
+$on-palm:                         {{ site.on_mobile }} !default;
 
 @mixin media-query($device) {
   @media screen and (max-width: $device) {
