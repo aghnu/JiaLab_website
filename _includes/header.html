@@ -8,10 +8,10 @@
                     <p class="text">Jia Lab</p>
                 </a>
             </div>
-            <a class="site-header-nav-icon">
+            <a class="site-header-nav-icon css-controlled">
                 <!-- <img src="/assets/svg/nav-button-icon.svg" class="icon"> -->
             </a>
-            <nav class="site-header-nav">
+            <nav class="site-header-nav css-controlled">
                 {% include nav.html %}
                 <a href="" id="site-header-nav-close-icon">
                     <!-- <img src="/assets/svg/close_button_icon.svg" class="icon"> -->
@@ -63,15 +63,13 @@
 
         // disable css control
         nav_close_icon.removeAttribute('href');
-        nav_button.style.pointerEvents = "none";
-        nav_button.addEventListener('click', () => {
-            console.log("YES");
-        });
+        nav_button.classList.remove('css-controlled');
+        site_header_nav.classList.remove('css-controlled');
 
-        nav_close_icon.onclick = () => {
-            console.log(site_header_nav);
-            site_header_nav.style.display = "none";
-        };
+        // replace with javascript control
+        nav_button.addEventListener('click', ()=>{
+            site_header_nav.classList.add('open');
+        });
 
     });
 </script>
