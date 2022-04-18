@@ -117,7 +117,7 @@ $nav-modal-item-size:         24px;
     background-color: $header-background-color;
     .site-header-nav-icon {
       display: block;
-      z-index: $layer-first-z-index;
+      z-index: $layer-second-z-index;
     }
 
     .site-header-nav-icon + .site-header-nav {
@@ -144,6 +144,7 @@ $nav-modal-item-size:         24px;
           color: $nav-modal-item-color;
           font-size: $nav-modal-item-size;
           text-align: center;
+          z-index: $layer-first-z-index;
         }
         .site-navigation-item.selected {
           border: none;
