@@ -18,6 +18,7 @@ $content-width-ratio:             60% !default;
 
 $max-content-width-mobile:        {{ site.on_mobile }} !default;
 
+$layer-top-z-index:                 1000;
 $layer-first-z-index:               999;
 $layer-second-z-index:              998;
 $layer-third-z-index:               997;
