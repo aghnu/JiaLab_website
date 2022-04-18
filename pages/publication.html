@@ -21,7 +21,7 @@ transparent_navi: false
         <div class="page-publication-block-body">
             {% for cata in catalogues %}
             <div class="section" id="{{cata.query_id}}">
-                <p class="title">{{cata.title}}:</p>
+                <a href="#{{cata.query_id}}" class="title">{{cata.title}}:</a>
                 <div class="text">{{cata.content}}</div>
             </div>
             {% endfor %}

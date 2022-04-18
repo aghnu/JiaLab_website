@@ -65,6 +65,7 @@ $resource-page-block-gap:                       60px;
 // publication page
 $publication-page-title-size:                   33px;
 $publication-page-title-weight:                 700;
+$publication-page-title-color:                  #000000;
 
 $publication-page-text-size:                    16px;
 
@@ -343,6 +344,8 @@ $publication-page-navigation-item-size:         20px;
         }
 
         .title {
+            text-decoration: none;
+            color: $publication-page-title-color;
             font-size: $publication-page-title-size;
             font-weight: $publication-page-title-weight;
         }
