@@ -9,10 +9,13 @@
                 </a>
             </div>
             <a class="site-header-nav-icon">
-                <img src="/assets/svg/nav-button-icon.svg" class="icon">
+                <!-- <img src="/assets/svg/nav-button-icon.svg" class="icon"> -->
             </a>
             <nav class="site-header-nav">
                 {% include nav.html %}
+                <a href="" id="site-header-nav-close-icon">
+                    <!-- <img src="/assets/svg/close_button_icon.svg" class="icon"> -->
+                </a>
             </nav>
         </div>
     </div>
@@ -47,8 +50,30 @@
         }
         scroll_position = this.scrollY;
     });
-    
 </script>
 {% endif %}
+
+<script>
+    window.addEventListener('load', () => {
+
+        // use javascript to replace css navigation control
+        const nav_button = document.querySelector(".site-header-nav-icon");
+        const nav_close_icon = document.querySelector("#site-header-nav-close-icon");
+        const site_header_nav = document.querySelector(".site-header-nav");
+
+        // disable css control
+        nav_close_icon.removeAttribute('href');
+        nav_button.style.pointerEvents = "none";
+        nav_button.addEventListener('click', () => {
+            console.log("YES");
+        });
+
+        nav_close_icon.onclick = () => {
+            console.log(site_header_nav);
+            site_header_nav.style.display = "none";
+        };
+
+    });
+</script>
 
 
