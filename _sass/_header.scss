@@ -6,16 +6,16 @@ $header-text-color:       #ffffff !default;
 $logo-text-size:            28px !default;
 $logo-text-weight:          500;
 $header-height:             64px !default;
+$header-gap:                30px;
 
 $nav-item-size:             16px !default;
-$nav-item-gap:              40px !default;
 $nav-item-sel-border-size:  2px !default;
-
 $font-family:               $font-montserrat;
 
 // header.html stylings
 .site-header {
   display: flex;
+  flex-direction: column;
   position: fixed;
   z-index: 1000;
   top: 0;
@@ -30,6 +30,7 @@ $font-family:               $font-montserrat;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    gap: $header-gap;
   }
 
   .site-header-logo {
@@ -43,6 +44,7 @@ $font-family:               $font-montserrat;
       font-weight: $logo-text-weight;
       text-align: center;
       line-height: $logo-text-size;
+      white-space: nowrap;
       margin: 0;      
     }
   }
@@ -74,7 +76,9 @@ $font-family:               $font-montserrat;
   display: flex;
   font-size: $nav-item-size;
   flex-direction: row;
-  gap: $nav-item-gap;
+  width: 400px;
+  
+  justify-content: space-between;
 }
 
 .site-navigation .site-navigation-item {
