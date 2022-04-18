@@ -383,3 +383,10 @@ $gallery_figure_title-size: 16px;
         }   
     }
 }
+
+// mobile
+@include media-query($on-palm) {
+    .page-research-block-banner .banner-background {
+        background-image: url("../img/background_3.jpg");
+    }
+}
