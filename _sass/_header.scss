@@ -154,7 +154,8 @@ $nav-modal-item-size:         24px;
         }
       }
 
-      &:hover {
+      &:hover,
+      &:active {
         background-color: $nav-modal-background-color;
         display: flex;
         .site-navigation .site-navigation-item {
@@ -164,9 +165,13 @@ $nav-modal-item-size:         24px;
   
 
     }
-    .site-header-nav-icon:hover + .site-header-nav {
-      display: flex;
+    .site-header-nav-icon:hover,
+    .site-header-nav-icon:active {
+      & + .site-header-nav {
+        display: flex;
+      }      
     }
+
 
   }
 
