@@ -88,14 +88,17 @@ $publication-page-navigation-item-size:         20px;
     object-fit: contain;
 }
 
-.page-research-block-banner .banner-info-container {
+.page-research-block-banner .content-wrapper {
     position: absolute;
     // width: $content-width-ratio;
     // max-width: $max-content-width;
     // min-width: $min-content-width;
     top: 55%;
-    // left: 50%;
-    transform: translate(0%, -50%);
+    left: 50%;
+    transform: translate(-50%, -50%);    
+}
+
+.page-research-block-banner .banner-info-container {
     display: flex;
     flex-direction: column;
     gap: $banner-info-gap;
