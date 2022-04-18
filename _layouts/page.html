@@ -2,11 +2,12 @@
 layout: default
 ---
 
-<div>
-    {%- include header.html is_transparent=page.transparent_navi -%}
-    <div class="page-content">
+<div class="page-wrapper">
+    <div>
+        {%- include header.html is_transparent=page.transparent_navi -%}
         {{ content }}
     </div>
-
-    {%- include footer.html -%}
+    <div class="page-footer-wrapper">
+        {%- include footer.html -%}        
+    </div>
 </div>  

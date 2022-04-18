@@ -7,6 +7,16 @@
     margin: auto;
 }
 
+.page-wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.page-footer-wrapper {
+    margin-top: auto;
+}
+
 // mobile
 @include media-query($on-palm) {
     .content-wrapper {
