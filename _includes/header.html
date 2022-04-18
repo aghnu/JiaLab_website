@@ -8,10 +8,10 @@
                     <p class="text">Jia Lab</p>
                 </a>
             </div>
-            <a class="site-header-nav-icon css-controlled">
+            <a class="site-header-nav-icon">
                 <!-- <img src="/assets/svg/nav-button-icon.svg" class="icon"> -->
             </a>
-            <nav class="site-header-nav css-controlled">
+            <nav class="site-header-nav">
                 {% include nav.html %}
                 <a href="" id="site-header-nav-close-icon">
                     <!-- <img src="/assets/svg/close_button_icon.svg" class="icon"> -->
@@ -61,16 +61,12 @@
         const nav_close_icon = document.querySelector("#site-header-nav-close-icon");
         const site_header_nav = document.querySelector(".site-header-nav");
 
-        // disable css control
         nav_close_icon.removeAttribute('href');
-        nav_button.classList.remove('css-controlled');
-        site_header_nav.classList.remove('css-controlled');
-
-        // replace with javascript control
-        nav_button.addEventListener('click', ()=>{
-            site_header_nav.classList.add('open');
+        nav_close_icon.addEventListener('click', () => {
+            const p = site_header_nav.parentElement;
+            p.removeChild(site_header_nav);
+            p.appendChild(site_header_nav);
         });
-
     });
 </script>
 
