@@ -93,6 +93,8 @@
             const sub_nav_bar_container = document.createElement('div');
             const site_header_placefiller = document.querySelector('.site-header-placefiller');
             
+            const sub_nav_item_selected = document.querySelector(".site-sub-navigation .site-navigation-item.selected");
+
             content_wrapper.classList.add("content-wrapper");
             sub_nav_bar_container.classList.add("sub-nav-bar-container");
             sub_nav_bar.classList.remove("site-navigation");
@@ -102,6 +104,7 @@
             content_wrapper.appendChild(sub_nav_bar_container);
             
             site_header_placefiller.parentElement.insertBefore(content_wrapper, site_header_placefiller.nextSibling);
+            document.querySelector(".site-sub-navigation .site-navigation-item.selected").scrollIntoView(false);
         });
     }
 
