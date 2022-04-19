@@ -67,19 +67,19 @@
 
             // add JS onclick handlers
             nav_button.addEventListener('click', () => {
-                site_header_nav.style.display = "flex";
+                site_header_nav.classList.add("open");
                 setTimeout(() => {
-                    site_header_nav.classList.add("open");
+                    site_header_nav.classList.add("open-transition");
                     close_button.classList.add("show");
                 }, 100);
             });
 
             close_button.addEventListener('click', () => {
                 const p = site_header_nav.parentElement;
-                site_header_nav.classList.remove("open");
                 close_button.classList.remove("show");
+                site_header_nav.classList.remove("open-transition");
                 setTimeout(() => {
-                    site_header_nav.style.display = "none";
+                    site_header_nav.classList.remove("open");
                 }, 100);
             });
         });

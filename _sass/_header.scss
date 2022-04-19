@@ -173,11 +173,15 @@ $nav-modal-item-size:         24px;
           }
         }
       }
-
-      &.css-controlled:hover,
+      
       &.open {
-        background-color: $nav-modal-background-color;
         display: flex;
+      }
+      
+      &.css-controlled:hover,
+      &.open-transition {
+        display: flex;
+        background-color: $nav-modal-background-color;
         .site-navigation .site-navigation-item {
           color: $nav-modal-item-color;
         }
@@ -207,9 +211,6 @@ $nav-modal-item-size:         24px;
         }    
       }
     }
-
-
-
   }
 
   .sub-nav-bar-container {
