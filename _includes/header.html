@@ -53,36 +53,60 @@
 <script>
     // optional script for when JS is enabled to improve user experience
 
-    window.addEventListener('load', () => {
-        // use javascript to replace css navigation control
-        // replace how close button is handled
-        const close_button = document.querySelector(".site-header-nav-close-icon");
-        const nav_button = document.querySelector(".site-header-nav-icon");
-        const site_header_nav = document.querySelector(".site-header-nav");
+    // use javascript to replace css navigation control
+    // replace how close button is handled
+    const addJSNavgationControll = () => {
+        window.addEventListener('DOMContentLoaded', () => {
+            const close_button = document.querySelector(".site-header-nav-close-icon");
+            const nav_button = document.querySelector(".site-header-nav-icon");
+            const site_header_nav = document.querySelector(".site-header-nav");
 
-        // remove css conytroll
-        site_header_nav.classList.remove('css-controlled');
-        nav_button.classList.remove('css-controlled');
+            // remove css conytroll
+            site_header_nav.classList.remove('css-controlled');
+            nav_button.classList.remove('css-controlled');
 
-        // add JS onclick handlers
-        nav_button.addEventListener('click', () => {
-            site_header_nav.style.display = "flex";
-            setTimeout(() => {
-                site_header_nav.classList.add("open");
-                close_button.classList.add("show");
-            }, 100);
+            // add JS onclick handlers
+            nav_button.addEventListener('click', () => {
+                site_header_nav.style.display = "flex";
+                setTimeout(() => {
+                    site_header_nav.classList.add("open");
+                    close_button.classList.add("show");
+                }, 100);
+            });
+
+            close_button.addEventListener('click', () => {
+                const p = site_header_nav.parentElement;
+                site_header_nav.classList.remove("open");
+                close_button.classList.remove("show");
+                setTimeout(() => {
+                    site_header_nav.style.display = "none";
+                }, 100);
+            });
         });
+    }
+    
+    // inject sub navigation bar to mobile page
+    const addSubNavigationBar = () => {
+        window.addEventListener('DOMContentLoaded', () => {
+            const sub_nav_bar = document.querySelector('.site-navigation').cloneNode(true);
+            const content_wrapper = document.createElement('div');
+            const sub_nav_bar_container = document.createElement('div');
+            const site_header_placefiller = document.querySelector('.site-header-placefiller');
+            
+            content_wrapper.classList.add("content-wrapper");
+            sub_nav_bar_container.classList.add("sub-nav-bar-container");
+            sub_nav_bar.classList.remove("site-navigation");
+            sub_nav_bar.classList.add("site-sub-navigation");
 
-        close_button.addEventListener('click', () => {
-            const p = site_header_nav.parentElement;
-            site_header_nav.classList.remove("open");
-            close_button.classList.remove("show");
-            setTimeout(() => {
-                site_header_nav.style.display = "none";
-            }, 100);
+            sub_nav_bar_container.appendChild(sub_nav_bar);
+            content_wrapper.appendChild(sub_nav_bar_container);
+            
+            site_header_placefiller.parentElement.insertBefore(content_wrapper, site_header_placefiller.nextSibling);
         });
-    });
+    }
 
+    addJSNavgationControll();
+    addSubNavigationBar();
 
 </script>
 
