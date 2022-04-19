@@ -373,11 +373,15 @@ $publication-page-navigation-item-size:         20px;
     }
 }
 
-$gallery_figure_height: 385px;
-$gallery_section_padding: 30px;
-$gallery_figure_title_height:   100px;
-$gallery_figure_title-size: 16px;
+$gallery_figure_height:                 385px;
+$gallery_section_padding:               30px;
+$gallery_figure_title_height:           100px;
+$gallery_figure_title-size:             16px;
 
+$gallery_mobile_figure_height:          308px;
+$gallery_mobile_section_padding:        24px;
+$gallery_mobile_figure_title_height:    80px;
+$gallery_mobile_figure_title-size:      13px;
 
 // research page slideshow
 .page-research-block-gallery {
@@ -482,6 +486,25 @@ $gallery_figure_title-size: 16px;
             border-bottom: solid;
             border-width: $research-info-separator-width;
             border-color: $research-info-separator-color;
+        }
+    }
+
+    // research page slideshow
+    .page-research-block-gallery {
+        height: calc(#{$gallery_mobile_figure_height} + #{$gallery_mobile_figure_title_height} + (#{$gallery_mobile_section_padding} * 4));
+
+        .section {
+            .figure_container {
+                .figure {
+                    width: calc($min-content-width - #{$gallery_mobile_section_padding} * 2);
+                    height: $gallery_mobile_figure_height;
+                    margin: $gallery_mobile_section_padding;
+                }
+            }
+            .title {
+                height: $gallery_mobile_figure_title_height;
+                font-size: $gallery_mobile_figure_title-size;
+            }   
         }
     }
 }
