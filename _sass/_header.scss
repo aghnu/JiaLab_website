@@ -98,9 +98,11 @@ $nav-modal-item-size:         24px;
   top: calc(#{$header-height/2});
   right: 25px;
   transform: translate(0%, -50%);
+  background-color: transparent;
+  border: none;
 }
 
-#site-header-nav-close-icon {
+.site-header-nav-close-icon {
   display: none;
   height: 28px;
   width: 28px;
@@ -112,6 +114,8 @@ $nav-modal-item-size:         24px;
   right: 25px;
   transform: translate(0%, -50%);
   z-index: $layer-top-z-index;
+  background-color: transparent;
+  border: none;
 }
 
 .site-navigation .site-navigation-item {
@@ -167,38 +171,44 @@ $nav-modal-item-size:         24px;
         }
       }
 
-      &:hover,
+      &.css-controlled:hover,
       &.open {
         background-color: $nav-modal-background-color;
         display: flex;
         .site-navigation .site-navigation-item {
           color: $nav-modal-item-color;
         }
+        // & + .site-header-nav-close-icon {
+        //   display: block;
+        // }    
       }
   
 
     }
-
+    .site-header-nav-close-icon.show {
+      display: block;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    
     .site-header-nav-icon {
       display: block;
       z-index: $layer-second-z-index;
       &:hover {
         cursor: pointer;
       }
-      &:active {
+      &.css-controlled:active {
         & + .site-header-nav {
           display: flex;
         }    
       }
     }
 
-    #site-header-nav-close-icon {
-      display: block;
-      &:hover {
-        cursor: pointer;
-      }
-    }
+
   }
+
+
 
   .site-header + .site-header-placefiller,
   .site-header.transparent + .site-header-placefiller {

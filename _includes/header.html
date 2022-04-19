@@ -8,15 +8,12 @@
                     <p class="text">Jia Lab</p>
                 </a>
             </div>
-            <a class="site-header-nav-icon">
+            <button class="site-header-nav-icon css-controlled">
                 <!-- <img src="/assets/svg/nav-button-icon.svg" class="icon"> -->
-            </a>
-            <nav class="site-header-nav">
+            </button>
+            <nav class="site-header-nav css-controlled">
                 {% include nav.html %}
-                <a href="" id="site-header-nav-close-icon">
-                    <!-- <img src="/assets/svg/close_button_icon.svg" class="icon"> -->
-                </a>
-            </nav>
+                <button class="site-header-nav-close-icon"></button>
         </div>
     </div>
 </header>
@@ -59,14 +56,30 @@
     window.addEventListener('load', () => {
         // use javascript to replace css navigation control
         // replace how close button is handled
-        const nav_close_icon = document.querySelector("#site-header-nav-close-icon");
+        const close_button = document.querySelector(".site-header-nav-close-icon");
+        const nav_button = document.querySelector(".site-header-nav-icon");
         const site_header_nav = document.querySelector(".site-header-nav");
 
-        nav_close_icon.removeAttribute('href');
-        nav_close_icon.addEventListener('click', () => {
+        // remove css conytroll
+        site_header_nav.classList.remove('css-controlled');
+        nav_button.classList.remove('css-controlled');
+
+        // add JS onclick handlers
+        nav_button.addEventListener('click', () => {
+            site_header_nav.style.display = "flex";
+            setTimeout(() => {
+                site_header_nav.classList.add("open");
+                close_button.classList.add("show");
+            }, 100);
+        });
+
+        close_button.addEventListener('click', () => {
             const p = site_header_nav.parentElement;
-            p.removeChild(site_header_nav);
-            p.appendChild(site_header_nav);
+            site_header_nav.classList.remove("open");
+            close_button.classList.remove("show");
+            setTimeout(() => {
+                site_header_nav.style.display = "none";
+            }, 100);
         });
     });
 
