@@ -4,16 +4,15 @@ query_id: "research_articles"
 index: 2
 ---
 
-Reference gene catalogs and genome catalogs for the microbiome at various body sites:
+**Reference gene catalogs and genome catalogs for the microbiome at various body sites:**
 
 1.Zhu J, Tian L, Chen P, Han M, Song L, Tong X, Sun X, Yang F, Lin Z, Liu X, Liu C, Wang X, Lin Y, Cai K, Hou Y, Xu X, Yang H, Wang J, Kristiansen K, Xiao L, Zhang T, Jia H*, Jie Z*. Over 50,000 Metagenomically Assembled Draft Genomes for the Human Oral Microbiome Reveal New Taxa. Genomics Proteomics Bioinformatics. 2021, S1672-0229(21)00176-5. Link-doi.org/10.1016/j.gpb.2021.05.001
 
 2.Zou   Y#, Xue W#, Luo G#, Deng   Z#, Qin   P#, Guo R, Sun H, Xia Y, Liang S, Dai Y, Wan D, Jiang R, Su L, Feng Q, Jie Z, Guo T, Xia Z, Liu C, Yu J, Lin Y, Tang S, Huo G, Xu X, Hou  Y, Liu   X, Wang J, Yang H, Kristiansen   K, Li J*, Jia H*, Xiao L*. 1,520 reference genomes from cultivated human gut bacteria enable functional microbiome analyses. Nat Biotechnol. 37, 179-185 (2019). Link-doi.org/10.1038/s41587-018-0008-8
 
-Highlighted in:
-Tang L. Human gut bacterial genome reference. Nat Methods. 16, 286 (2019).
-(2019).
-Wolke T. Beyond the census of human gut dwellers. Nat Rev Microbiol. 17, 401 (2019).
+***Highlighted in:***
+***Tang L. Human gut bacterial genome reference. Nat Methods. 16, 286 (2019).***
+***Wolke T. Beyond the census of human gut dwellers. Nat Rev Microbiol. 17, 401 (2019).***
 
 3.Li F#, Chen C#, Wei W#, Wang Z, Dai J, Hao L, Song L, Zhang X, Zeng L, Du H, Tang H, Liu N, Yang H, Wang J, Madsen L, Brix S, Kristiansen K, Xu X, Li J, Wu R*, Jia H*. The metagenome of the female upper reproductive tract. GigaScience. 7(10), giy107 (2018).
 

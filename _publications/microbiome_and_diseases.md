@@ -26,18 +26,18 @@ index: 3
 
 11.Jie Z#, Xia H#, Zhong S#, Feng Q#, Li S, Liang S, Zhong H, Liu Z, Gao Y, Zhao H, Zhang D, Su Z, Fang Z, Lan Z, Li J, Xiao L, Li J, Li R, Li X, Li F, Ren H, Huang Y, Peng Y, Li G, Wen B, Dong B, Chen J, Geng Q, Zhang Z, Yang H, Wang J, Wang J, Zhang X, Madsen L, Ning G, Xu X, Liu X, Hou Y, Jia H*, He K*, Kristiansen K*. The gut microbiome in atherosclerotic cardiovascular disease. Nat Communs. 8, 845 (2017).
 
-Highlighted in:
-Barrington WT & Lusis AJ. Association between the gut microbiome and atherosclerosis. Nat Rev Cardiol. 14, 699–700 (2017).
+***Highlighted in:***
+***Barrington WT & Lusis AJ. Association between the gut microbiome and atherosclerosis. Nat Rev Cardiol. 14, 699–700 (2017).***
 
 12.Wang J#,*, Jia H#,*. Metagenome-wide association studies: fine-mining the microbiome. Nat Rev Microbiol. 14, 508-522 (2016).
 
 13.Zhang X#,*, Zhang D#, Jia H#, Feng Q#, Wang D#, Liang D#, Wu X, Li J, Tang L, Li Y, Lan Z, Chen B, Li Y, Zhong H, Xie H, Jie Z, Chen W, Tang S, Xu X, Wang X, Cai X, Liu S, Xia Y, Li J, Qiao X, Al-Aama JY, Chen H, Wang L, Wu Q, Zhang F, Zheng W, Li Y, Zhang M, Luo G, Xue W, Xiao L, Li J, Chen W, Xu X, Yin Y, Yang H, Wang J, Kristiansen K, Liu L, Li T, Huang Q, Li Y*, Wang J*. The oral and gut microbiome are perturbed in rheumatoid arthritis and partly normalized following treatment. Nat Med. 21, 895-905 (2015).
 
-Highlighted in:
-Phillips R. Rheumatoid arthritis: Microbiome reflects status of RA and response to therapy. Nat Rev Rheumatol. 2015;11:502.
-Roger GB. Germs and joints: the contribution of the human microbiome to rheumatoid arthritis. Nat Med. 2015;21:839-41.
-Tong Y. Metagenome-wide Association Studies Potentiate Precision Medicine for Rheumatoid Arthritis. Genomics Proteomics Bioinformatics. 2015;13:208-9.
-Jakubovics NS. A new association for the oral metagenome. Oral Dis. 2016;22:77-80.
+***Highlighted in:***
+***Phillips R. Rheumatoid arthritis: Microbiome reflects status of RA and response to therapy. Nat Rev Rheumatol. 2015;11:502.***
+***Roger GB. Germs and joints: the contribution of the human microbiome to rheumatoid arthritis. Nat Med. 2015;21:839-41.***
+***Tong Y. Metagenome-wide Association Studies Potentiate Precision Medicine for Rheumatoid Arthritis. Genomics Proteomics Bioinformatics. 2015;13:208-9.***
+***Jakubovics NS. A new association for the oral metagenome. Oral Dis. 2016;22:77-80.***
 
 14.Yu J*, Feng Q*, Wong SH*, Zhang D*, Liang QY*, Qin Y, Tang L, Stenvang J, Li Y, Li Y, Chen N, Wu WK, Al-Aama J, Nielsen HJ, Yau TO, Lan Z, Jia H, Li J, Xiao L, Lam TY, Ng SC, Cheng AS, Wong VW, Chan FK, Xu X, Yang H, Wang J, Brünner N, Kristiansen K, Arumugam M‡, Sung JJ‡, Wang J‡. Metagenomic analysis of faecal microbiome as a tool towards targeted non-invasive biomarkers for colorectal cancer. Gut. doi: 10.1136/gutjnl-2015-309800.
 
