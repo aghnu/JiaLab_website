@@ -14,7 +14,7 @@ $base-font-family:                $font-roboto !default;
 
 $max-content-width:               1024px !default;
 $min-content-width:               {{ site.on_mobile }} !default;
-$content-width-ratio:             60% !default;
+$content-width-ratio:             75% !default;
 
 $max-content-width-mobile:        {{ site.on_mobile }} !default;
 
