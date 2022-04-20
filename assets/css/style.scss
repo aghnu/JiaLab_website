@@ -12,9 +12,9 @@ $base-font-weight:                400 !default;
 
 $base-font-family:                $font-roboto !default;
 
-$max-content-width:               1024px !default;
+$max-content-width:               1366px !default;
 $min-content-width:               {{ site.on_mobile }} !default;
-$content-width-ratio:             75% !default;
+$content-width-ratio:             65% !default;
 
 $max-content-width-mobile:        {{ site.on_mobile }} !default;
 
