@@ -17,6 +17,7 @@ transparent_navi: false
             </div>
         </div>
     </div>
+    <div class="page-publication-block-navigation-placefiller"></div>
     <div class="content-wrapper">
         <div class="page-publication-block-body">
             {% for cata in catalogues %}
@@ -29,3 +30,73 @@ transparent_navi: false
     </div>
 
 </div>
+<script>
+    window.addEventListener('scroll', () => {
+        const pub_nav = document.querySelector('.page-publication-block-navigation');
+        if (this.scrollY <= 40) {
+            pub_nav.classList.remove("scrolled");
+        }
+        else if(this.scrollY >= 100) {
+            pub_nav.classList.add("scrolled");
+        }
+    });
+
+    // add floating next button for mobile
+    window.addEventListener('DOMContentLoaded', () => {
+        const float_btn = document.createElement("button");
+        const float_btn_sibl = document.querySelector(".page-publication-block-navigation-placefiller");
+        const cata_navigation_elements = document.querySelectorAll(".catalogue");
+        const cata_navigations = Array.from(cata_navigation_elements).map((cata) => cata.attributes.href.value);
+
+        const float_btn_icon_down = document.createElement("img");
+        const float_btn_icon_up = document.createElement("img");
+        float_btn_icon_up.setAttribute("src" ,"/assets/svg/float_btn_up_icon.svg");
+        float_btn_icon_down.setAttribute("src" ,"/assets/svg/float_btn_down_icon.svg");
+        
+        float_btn_icon_down.style.display = "none";
+        float_btn_icon_up.style.display = "none";
+
+        float_btn.appendChild(float_btn_icon_up);
+        float_btn.appendChild(float_btn_icon_down);
+
+        float_btn.classList.add("pub-nav-float-btn");
+        float_btn_sibl.parentElement.insertBefore(float_btn, float_btn_sibl);
+
+        const update_button = () => {
+            const url_hash = window.location.hash;
+
+            // clear selected element
+            cata_navigation_elements.forEach((cata) => {
+                cata.classList.remove("selected");
+            });
+
+            let cata_index = cata_navigations.indexOf(url_hash);
+            if ((cata_index === -1)&&(url_hash !== "")) {
+                window.location.href = "";
+            } else {
+                if (url_hash !== "") {
+                    cata_navigation_elements[cata_index].classList.add("selected");
+                }                
+                cata_index = ((cata_index + 1) % cata_navigations.length);
+                // select element
+
+            }
+
+            if ((cata_index === 0)&&(url_hash !== "")) {
+                float_btn_icon_up.style.display = "block";
+                float_btn_icon_down.style.display = "none";
+
+            } else {
+                float_btn_icon_up.style.display = "none";
+                float_btn_icon_down.style.display = "block";
+            }
+
+            float_btn.onclick = () => {
+                window.location.href = cata_navigations[cata_index];
+            };
+        };
+
+        update_button();
+        window.addEventListener('hashchange', update_button);
+    });
+</script>
