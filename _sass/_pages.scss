@@ -285,6 +285,60 @@ $publication-mobile-page-navigation-item-size:         20px;
     }
 }
 
+.page-research-block-gallery-js {
+    height: 436px;
+    width: 100%;
+    display: flex;
+    position: relative;
+    .gallery-button {
+        height: 100px;
+        width: 60px;
+        background-size: cover;
+        position: absolute;
+        transform: translate(0%, -50%);
+        &.b-left {
+            top: 50%;
+            left: 0;
+            background-image: url("../svg/gallery_button_left_icon.svg");
+        }
+
+        &.b-right {
+            top: 50%;
+            right: 0;
+            background-image: url("../svg/gallery_button_right_icon.svg");
+        }
+    }
+
+    .gallery-container {
+        margin: 30px;
+        width: calc(100% / 3);
+        img {
+            height: 385px;
+            width: 100%;
+            object-fit: contain;
+        }
+        &.g-left {
+
+        }
+        &.g-right {
+
+        }
+        &.g-middle {
+
+        }
+    }
+
+    // .JSGallery_title_container {
+    //     position: absolute;
+    //     width: 100%;
+    //     height: $gallery_figure_title_height;
+    //     bottom: 0;
+    //     left: 0;
+    //     transform: translate(0%, -100%);
+    // }
+
+}
+
 // team page
 .page-team {
     margin-top: $team-block-gap;

@@ -74,14 +74,14 @@ transparent_navi: true
         const JSGallery_button_left = document.createElement('button');
         const JSGallery_button_right = document.createElement('button');
 
-        JSGallery.classList.add(".page-research-block-gallery-js");
+        JSGallery.classList.add("page-research-block-gallery-js");
         
         JSGallery_title_container.classList.add("gallery-title-container");
 
         JSGallery_left.classList.add("gallery-container");
         JSGallery_right.classList.add("gallery-container");
         JSGallery_middle.classList.add("gallery-container");
-        JSGallery_left.classList.add("g-lefy");
+        JSGallery_left.classList.add("g-left");
         JSGallery_right.classList.add("g-right");
         JSGallery_middle.classList.add("g-middle");
 
@@ -94,10 +94,10 @@ transparent_navi: true
         JSGallery.appendChild(JSGallery_middle);
         JSGallery.appendChild(JSGallery_right);
 
-        JSGallery.appendChild(JSGallery_title_container);
+        // JSGallery.appendChild(JSGallery_title_container);
 
         JSGallery.appendChild(JSGallery_button_left);
-        JSGallery.appendChild(JSGallery_button_left);
+        JSGallery.appendChild(JSGallery_button_right);
 
         // replace old gallery
         gallery.parentElement.insertBefore(JSGallery, gallery);
@@ -110,20 +110,38 @@ transparent_navi: true
                 "title_element":        sect.querySelector("p")
             };
         });
+        const figure_store_unused = document.createElement("div");
+        const clear_figures = () => {
+            figure_list.forEach((el)=>{
+                    figure_store_unused.appendChild(el.figure_element);
+                    figure_store_unused.appendChild(el.title_element);
+            });            
+        }
+        clear_figures();
+ 
 
         // state
         // NOTE: will not consider the case where total number of figure is less than 3
         // future feature?
         let figure_index = 0;
 
-        
-        // ----------------------- testing ------------------------
-        JSGallery_left.appendChild(figure_list[0].figure_element);
-        JSGallery_middle.appendChild(figure_list[1].figure_element);
-        JSGallery_right.appendChild(figure_list[2].figure_element);
-        // --------------------------------------------------------
+        const update_figures = (middle_index) => {
+            clear_figures();
+            JSGallery_left.appendChild(figure_list[((middle_index-1)+figure_list.length)%figure_list.length].figure_element);
+            JSGallery_middle.appendChild(figure_list[middle_index].figure_element);
+            JSGallery_right.appendChild(figure_list[(middle_index+1)%figure_list.length].figure_element);            
+        }
 
+        update_figures(figure_index);
 
+        JSGallery_button_left.onclick = () => {
+            figure_index = ((figure_index - 1)+figure_list.length) % figure_list.length;
+            update_figures(figure_index);
+        };
+        JSGallery_button_right.onclick = () => {
+            figure_index = (figure_index + 1)%figure_list.length;
+            update_figures(figure_index);
+        }
 
     });
 
