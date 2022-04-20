@@ -1,6 +1,6 @@
 ---
 name: Clifford Woolf
 website: ""
-profile_photo_path: ""
+profile_photo_path: "CliffordWoolf.png"
 position: Student
 ---

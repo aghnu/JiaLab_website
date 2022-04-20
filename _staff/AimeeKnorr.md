@@ -1,6 +1,6 @@
 ---
 name: Aimee Knorr
 website: ""
-profile_photo_path: ""
+profile_photo_path: "AimeeKnorr.png"
 position: Student
 ---

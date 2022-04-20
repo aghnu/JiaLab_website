@@ -1,7 +1,7 @@
 ---
 name: Huijue Jia
 website: ""
-profile_photo_path: "HuijueJia.png"
+profile_photo_path: "HuijueJia.jpg"
 position: Faculty
 title: "Dr."
 ---
