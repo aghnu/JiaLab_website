@@ -198,16 +198,21 @@ $publication-mobile-page-navigation-item-size:         20px;
     }
 
     .banner-button {
+        text-decoration: none;
+        font-size: $banner-button-text-size;
+        font-family: $banner-button-text-font;
+        text-transform: uppercase;
+        color: $banner-button-text-color;
+        text-align: center;
+
+        padding-top: calc((#{$banner-button-height} - #{$banner-button-text-size}) / 2);
+        padding-bottom: calc((#{$banner-button-height} - #{$banner-button-text-size}) / 2);
+
         width: $banner-button-width;
-        height: $banner-button-height;
         border-radius: $banner-button-radius;
         background-color: $banner-button-color;
         margin-top: $banner-button-margin-top;
         border: none;
-        color: $banner-button-text-color;
-        font-size: $banner-button-text-size;
-        font-family: $banner-button-text-font;
-        text-transform: uppercase;
     }
 }
 
@@ -486,7 +491,9 @@ $publication-mobile-page-navigation-item-size:         20px;
 
         .banner-button {
             width: $banner-mobile-button-width;
-            height: $banner-mobile-button-height;
+            padding-top: calc((#{$banner-mobile-button-height} - #{$banner-mobile-button-text-size}) / 2);
+            padding-bottom: calc((#{$banner-mobile-button-height} - #{$banner-mobile-button-text-size}) / 2);
+            
             border-radius: $banner-mobile-button-radius;
             margin-top: $banner-mobile-button-margin-top;
             font-size: $banner-mobile-button-text-size;
