@@ -213,7 +213,7 @@ $publication-mobile-page-navigation-item-size:         20px;
 
 // research page intro
 .page-research-block-intro {
-    margin-top: $research-info-gap;
+    margin-top: calc(#{$research-info-gap} + 20px);
     margin-bottom: $research-info-gap;
     .section {
         display: flex;
@@ -241,8 +241,8 @@ $publication-mobile-page-navigation-item-size:         20px;
         object-fit: contain;
     }
     .separator {
-        margin-top: $research-info-gap;
-        margin-bottom: $research-info-gap;
+        margin-top: calc(#{$research-info-gap} + 20px);
+        margin-bottom: calc(#{$research-info-gap} + 20px);
         border-bottom: solid;
         border-width: $research-info-separator-width;
         border-color: $research-info-separator-color;
