@@ -58,6 +58,73 @@ transparent_navi: true
 <script>
     // optional script for additional functionalities
 
-    // pop-up modal
+    window.addEventListener('DOMContentLoaded', () => {
+        
+        const gallery = document.querySelector('.page-research-block-gallery');
+
+        // create html DOM elements for JSGallery
+        const JSGallery = document.createElement("div");
+        
+        const JSGallery_title_container = document.createElement("div");
+
+        const JSGallery_left = document.createElement("div");
+        const JSGallery_right = document.createElement("div");
+        const JSGallery_middle = document.createElement("div");
+
+        const JSGallery_button_left = document.createElement('button');
+        const JSGallery_button_right = document.createElement('button');
+
+        JSGallery.classList.add(".page-research-block-gallery-js");
+        
+        JSGallery_title_container.classList.add("gallery-title-container");
+
+        JSGallery_left.classList.add("gallery-container");
+        JSGallery_right.classList.add("gallery-container");
+        JSGallery_middle.classList.add("gallery-container");
+        JSGallery_left.classList.add("g-lefy");
+        JSGallery_right.classList.add("g-right");
+        JSGallery_middle.classList.add("g-middle");
+
+        JSGallery_button_left.classList.add("gallery-button");
+        JSGallery_button_right.classList.add("gallery-button");
+        JSGallery_button_left.classList.add("b-left");
+        JSGallery_button_right.classList.add("b-right");
+
+        JSGallery.appendChild(JSGallery_left);
+        JSGallery.appendChild(JSGallery_middle);
+        JSGallery.appendChild(JSGallery_right);
+
+        JSGallery.appendChild(JSGallery_title_container);
+
+        JSGallery.appendChild(JSGallery_button_left);
+        JSGallery.appendChild(JSGallery_button_left);
+
+        // replace old gallery
+        gallery.parentElement.insertBefore(JSGallery, gallery);
+        gallery.parentElement.removeChild(gallery);
+
+        // figure list, get all figures from old gallery
+        const figure_list = Array.from(gallery.querySelectorAll(".section")).map((sect) => {
+            return {
+                "figure_element":       sect.querySelector("img"),
+                "title_element":        sect.querySelector("p")
+            };
+        });
+
+        // state
+        // NOTE: will not consider the case where total number of figure is less than 3
+        // future feature?
+        let figure_index = 0;
+
+        
+        // ----------------------- testing ------------------------
+        JSGallery_left.appendChild(figure_list[0].figure_element);
+        JSGallery_middle.appendChild(figure_list[1].figure_element);
+        JSGallery_right.appendChild(figure_list[2].figure_element);
+        // --------------------------------------------------------
+
+
+
+    });
 
 </script>
