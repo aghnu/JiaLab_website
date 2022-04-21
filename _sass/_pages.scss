@@ -5,93 +5,93 @@
 //      resource.html
 
 // defaults
-$header-height:                                 64px !default;
+$header-height:                                         64px;
 
 // research banner
-$banner-size-height:                            600px !default;
-$banner-info-gap:                               20px !default;
-$banner-info-title-size:                        36px !default; 
-$banner-info-color:                             #ffffff !default; 
-$banner-info-title-weight:                      600 !default;
-$banner-font:                                   $font-poppins;
+$banner-size-height:                                    600px;
+$banner-info-gap:                                       20px;
+$banner-info-title-size:                                36px; 
+$banner-info-color:                                     #ffffff; 
+$banner-info-title-weight:                              600;
+$banner-font:                                           $font-poppins;
 
-$banner-button-color:                           #55D7B8 !default;
-$banner-button-height:                          52px !default;
-$banner-button-width:                           210px !default;
-$banner-button-radius:                          27px !default;
-$banner-button-margin-top:                      80px !default;
-$banner-button-text-size:                       20px !default;
-$banner-button-text-font:                       $font-montserrat;
-$banner-button-text-color:                      #000000;
+$banner-button-color:                                   #55D7B8;
+$banner-button-height:                                  52px;
+$banner-button-width:                                   210px;
+$banner-button-radius:                                  27px;
+$banner-button-margin-top:                              80px;
+$banner-button-text-size:                               20px;
+$banner-button-text-font:                               $font-montserrat;
+$banner-button-text-color:                              #000000;
 
-$banner-mobile-size-height:                     400px !default;
-$banner-mobile-info-gap:                        10px !default;
-$banner-mobile-info-title-size:                 26px !default; 
-$banner-mobile-info-color:                      #ffffff !default; 
-$banner-mobile-info-title-weight:               600 !default;
-$banner-mobile-font:                            $font-poppins;
+$banner-mobile-size-height:                             400px;
+$banner-mobile-info-gap:                                10px;
+$banner-mobile-info-title-size:                         26px; 
+$banner-mobile-info-color:                              #ffffff; 
+$banner-mobile-info-title-weight:                       600;
+$banner-mobile-font:                                    $font-poppins;
 
-$banner-mobile-button-height:                   41px !default;
-$banner-mobile-button-width:                    168px !default;
-$banner-mobile-button-radius:                   21px !default;
-$banner-mobile-button-margin-top:               15px !default;
-$banner-mobile-button-text-size:                18px !default;
+$banner-mobile-button-height:                           41px;
+$banner-mobile-button-width:                            168px;
+$banner-mobile-button-radius:                           21px;
+$banner-mobile-button-margin-top:                       15px;
+$banner-mobile-button-text-size:                        18px;
 
-$gallery_figure_height:                         340px;
-$gallery_section_padding:                       30px;
-$gallery_figure_title_height:                   100px;
-$gallery_figure_title-size:                     16px;
+$gallery_figure_height:                                 340px;
+$gallery_section_padding:                               30px;
+$gallery_figure_title_height:                           100px;
+$gallery_figure_title-size:                             16px;
 
-$gallery_mobile_figure_height:                  308px;
-$gallery_mobile_section_padding:                24px;
-$gallery_mobile_figure_title_height:            80px;
-$gallery_mobile_figure_title-size:              13px;
+$gallery_mobile_figure_height:                          308px;
+$gallery_mobile_section_padding:                        24px;
+$gallery_mobile_figure_title_height:                    80px;
+$gallery_mobile_figure_title-size:                      13px;
 
 // research info
-$research-info-gap:                             25px !default;
-$research-info-separator-color:                 #B6B6B6;
-$research-info-separator-width:                 1px;
+$research-info-gap:                                     25px;
+$research-info-separator-color:                         #B6B6B6;
+$research-info-separator-width:                         1px;
 
-$research-info-text-title-size:                 28px;
-$research-info-text-title-weight:               500;
-$research-info-text-size:                       $base-font-size;
+$research-info-text-title-size:                         28px;
+$research-info-text-title-weight:                       500;
+$research-info-text-size:                               $base-font-size;
 
-$research-info-figure-height:                   180px;
-$research-info-figure-width:                    240px;
-$research-info-figure-margin-right:             30px;
+$research-info-figure-height:                           180px;
+$research-info-figure-width:                            240px;
+$research-info-figure-margin-right:                     30px;
 
 
 // mobiel
-$research-mobile-info-gap:                      25px !default;
-$research-mobile-info-separator-color:          #B6B6B6;
-$research-mobile-info-separator-width:          1px;
+$research-mobile-info-gap:                              25px;
+$research-mobile-info-separator-color:                  #B6B6B6;
+$research-mobile-info-separator-width:                  1px;
 
-$research-mobile-info-text-title-size:          24px;
-$research-mobile-info-text-title-weight:        500;
-$research-mobile-info-text-size:                $base-font-size;
+$research-mobile-info-text-title-size:                  24px;
+$research-mobile-info-text-title-weight:                500;
+$research-mobile-info-text-size:                        $base-font-size;
 
-$research-mobile-info-figure-height:            144px;
-$research-mobile-info-figure-width:             192px;
+$research-mobile-info-figure-height:                    144px;
+$research-mobile-info-figure-width:                     192px;
 
 
 // team page
-$team-profile-pic-size-faculty:                 180px;
-$team-profile-pic-size-team:                    110px;
+$team-profile-pic-size-faculty:                         180px;
+$team-profile-pic-size-team:                            110px;
 
-$team-block-gap:                                60px;
+$team-block-gap:                                        60px;
 
-$team-page-separator-width:                     1px;
-$team-page-separator-color:                     #B6B6B6;
+$team-page-separator-width:                             1px;
+$team-page-separator-color:                             #B6B6B6;
 
-$team-faculty-info-title-size:                  28px;
-$team-faculty-info-title-weight:                600;
-$team-faculty-info-figure-margin-right:         80px;
+$team-faculty-info-title-size:                          28px;
+$team-faculty-info-title-weight:                        600;
+$team-faculty-info-figure-margin-right:                 80px;
 
-$team-group-label-size:                         28px;
-$team-group-label-weight:                       600;
-$team-group-profile-gap:                        50px;
-$team-group-profile-gap-row:                    40px;
-$team-group-section-width:                      calc(#{$team-profile-pic-size-team} + 5px);
+$team-group-label-size:                                 28px;
+$team-group-label-weight:                               600;
+$team-group-profile-gap:                                50px;
+$team-group-profile-gap-row:                            40px;
+$team-group-section-width:                              calc(#{$team-profile-pic-size-team} + 5px);
 
 
 
@@ -151,12 +151,12 @@ $publication-scroll-margin-top:                         140px + $publication-pag
 $publication-mobile-page-title-size:                    28px;
 $publication-mobile-page-title-weight:                  700;
 $publication-mobile-page-title-color:                   #000000;
-$publication-mobile-page-cata-gap:                      10px !default;
+$publication-mobile-page-cata-gap:                      10px;
 
 $publication-mobile-page-text-size:                     16px;
 
 $publication-mobile-page-block-gap:                     36px;
-$publication-mobile-scroll-margin-top:                  140px !default;
+$publication-mobile-scroll-margin-top:                  140px;
 
 $publication-mobile-page-navigation-background:         #E7E7E7;
 $publication-mobile-page-navigation-item-color:         #000000;
@@ -165,10 +165,38 @@ $publication-mobile-page-navigation-item-size:          20px;
 
 
 // side panel
-$side-panel-width:      160px;
+$side-panel-width:                                      160px;
+$side-panel-margin:                                     40px;
+
+$side-panel-gap:                                        20px;
+$side-panel-border-radius:                              6px;
+$side-panel-news-text-bgcolor:                          #153C4D;
+
+$side-panel-contact-bgcolor:                            #F5F5F5;
+$side-panel-contact-padding:                            18px;
+$side-panel-contact-gap:                                15px;
+
+$side-panel-title-size:                                 18px;
+$side-panel-text-size:                                  14px;
+
+$side-panel-icon-size:                                  45px;
+
+// image modal
+$research-gallery-modal-bgcolor:                        #E7E7E7;
+$research-gallery-modal-figure-margin-top-ratio:        0.05;
+$research-gallery-modal-figure-height-ratio:            0.5;
+$research-gallery-modal-title-margin-top-ratio:         0.025;
+
+$research-gallery-modal-close-button-size:              28px;
 
 
-$side-panel-margin:    40px;
+// gallery JS
+$research-gallery-JS-height:                            436px;
+$research-gallery-JS-margin-top:                        50px;
+
+$research-gallery-button-width:                         60px;
+$research-gallery-button-height:                        100px;
+
 
 .page-research {
     overflow-x: hidden;
@@ -180,11 +208,10 @@ $side-panel-margin:    40px;
     min-width: calc(#{$min-content-width} - 50px);
     margin: auto;
     position: relative;
-    // left: 0;
     .side-panel {
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        gap: $side-panel-gap;
         margin-top: $side-panel-margin;
         position: absolute;
         right: -$side-panel-margin;
@@ -198,7 +225,7 @@ $side-panel-margin:    40px;
     .news {
         overflow: hidden;
         position: relative;
-        border-radius: 6px;
+        border-radius: $side-panel-border-radius;
         width: $side-panel-width;
         height: min-content;
         box-shadow: 0 6px 12px rgba($color: #000, $alpha: 0.16);
@@ -210,47 +237,45 @@ $side-panel-margin:    40px;
             object-fit: contain;
         }
 
-
-
         .news_text_container {
             position: absolute;
             bottom: 0;
             width: 100%;
-            background-color: rgba($color: #153C4D, $alpha: 0.67);
+            background-color: rgba($color: $side-panel-news-text-bgcolor, $alpha: 0.67);
             .text {
                 color: #fff;
                 text-align: center;
-                font-size: 14px;
+                font-size: $side-panel-text-size;
             }
         }
 
     }
     .contact_panel {
         overflow: hidden;
-        border-radius: 6px;
-        padding: 18px;
+        border-radius: $side-panel-border-radius;
+        padding: $side-panel-contact-padding;
         box-shadow: 0 6px 12px rgba($color: #000, $alpha: 0.16);
         display: flex;
         flex-direction: column;
-        gap: 15px;
-        background-color: #F5F5F5;
+        gap: $side-panel-contact-gap;
+        background-color: $side-panel-contact-bgcolor;
 
         .title {
-            font-size: 18px;
+            font-size: $side-panel-title-size;
             text-transform: uppercase;
             margin: 0;
         }
 
         .text {
-            font-size: 14px;
+            font-size: $side-panel-text-size;
             margin: 0;
         }
 
  
         .icon {
             margin: auto;
-            width: 45px;
-            height: 45px;
+            width: $side-panel-icon-size;
+            height: $side-panel-icon-size;
             background-size: cover;
             background-image: url("../svg/mail_icon.svg");
         }
@@ -390,7 +415,7 @@ $side-panel-margin:    40px;
     height: 100%;
     top: 0;
     left: 0;
-    background-color: #E7E7E7;
+    background-color: $research-gallery-modal-bgcolor;
     z-index: $layer-top-z-index;
     .page-research-block-gallery-js {
         height: 100%;
@@ -399,9 +424,9 @@ $side-panel-margin:    40px;
     }
 
     .figure_container {
-        margin-top: calc(100vh * 0.05);
+        margin-top: calc(100vh * $research-gallery-modal-figure-margin-top-ratio);
         .gallery-container {
-            height: calc(100vh * 0.5);
+            height: calc(100vh * $research-gallery-modal-figure-height-ratio);
             justify-content: center;
             &.g-left img, 
             &.g-right img {
@@ -424,7 +449,7 @@ $side-panel-margin:    40px;
     .gallery-title-container {
         width: 80%;
         margin: auto;
-        margin-top: calc(100vh * 0.025);
+        margin-top: calc(100vh * $research-gallery-modal-title-margin-top-ratio);
         margin-bottom: 0;
         height: $gallery_figure_title_height;
         p {
@@ -446,8 +471,8 @@ $side-panel-margin:    40px;
 
     .gallery-close-button {
         display: block;
-        height: 28px;
-        width: 28px;
+        height: $research-gallery-modal-close-button-size;
+        width: $research-gallery-modal-close-button-size;
         padding: 0;
         background-image: url("../svg/close_button_icon.svg");
         background-size: cover;
@@ -466,10 +491,10 @@ $side-panel-margin:    40px;
 }
 
 .page-research-block-gallery-js {
-    height: 436px;
+    height: $research-gallery-JS-height;
     width: 100%;
     position: relative;
-    margin-top: 50px;
+    margin-top: $research-gallery-JS-margin-top;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -495,8 +520,8 @@ $side-panel-margin:    40px;
     }
 
     .gallery-button {
-        height: 100px;
-        width: 60px;
+        height: $research-gallery-button-height;
+        width: $research-gallery-button-width;
         background-size: cover;
         position: absolute;
         transform: translate(0%, -50%);
@@ -555,6 +580,7 @@ $side-panel-margin:    40px;
                 object-fit: contain;
                 box-shadow: 0 5px 34px rgba($color: #000000, $alpha: 0.2);
                 z-index: $layer-fourth-z-index;
+                border: none;
                 &:hover{
                     cursor: pointer;
                 }
