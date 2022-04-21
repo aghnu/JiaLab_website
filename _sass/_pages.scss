@@ -5,6 +5,8 @@
 //      resource.html
 
 // defaults
+$header-height:                                 64px !default;
+
 // research banner
 $banner-size-height:                            600px !default;
 $banner-info-gap:                               20px !default;
@@ -382,6 +384,87 @@ $side-panel-margin:    40px;
     }
 }
 
+.gallery_outter_container.modal {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #E7E7E7;
+    z-index: $layer-top-z-index;
+    .page-research-block-gallery-js {
+        height: 100%;
+        width: 100%;
+        margin-top: unset;
+    }
+
+    .figure_container {
+        margin-top: calc(100vh * 0.05);
+        .gallery-container {
+            height: calc(100vh * 0.6);
+            justify-content: center;
+            &.g-left img, 
+            &.g-right img {
+                display: none;
+                height: 85%;
+                object-fit: contain;
+            }
+    
+            &.g-middle img {
+                object-fit: contain;
+                box-shadow: 0 5px 34px rgba($color: #000000, $alpha: 0.2);
+                z-index: $layer-fourth-z-index;
+                &:hover{
+                    cursor: unset;
+                }
+            }
+        }
+    }
+
+    .gallery-title-container {
+        width: 80%;
+        margin: auto;
+        margin-top: calc(100vh * 0.05);
+        margin-bottom: 0;
+        height: $gallery_figure_title_height;
+        p {
+            text-align: center;
+            width: 100%;
+            word-wrap: normal;
+        }
+    }
+
+    .gallery-fade {
+        &.f-left {
+            background-image: linear-gradient(to left, rgba($color: #E7E7E7, $alpha: 0), rgba($color: #E7E7E7, $alpha: 1));
+        }
+        &.f-right {
+            background-image: linear-gradient(to right, rgba($color: #E7E7E7, $alpha: 0), rgba($color: #E7E7E7, $alpha: 1));
+
+        }
+    }
+
+    .gallery-close-button {
+        display: block;
+        height: 28px;
+        width: 28px;
+        padding: 0;
+        background-image: url("../svg/close_button_icon.svg");
+        background-size: cover;
+        position: fixed;
+        top: calc(#{$header-height} / 2);
+        right: 25px;
+        transform: translate(0%, -50%);
+        z-index: $layer-top-z-index;
+        background-color: transparent;
+        border: none;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
 .page-research-block-gallery-js {
     height: 436px;
     width: 100%;
@@ -405,6 +488,10 @@ $side-panel-margin:    40px;
             background-image: linear-gradient(to right, rgba($color: #fff, $alpha: 0), rgba($color: #fff, $alpha: 1));
 
         }
+    }
+
+    .gallery-close-button {
+        display: none;
     }
 
     .gallery-button {
@@ -468,6 +555,9 @@ $side-panel-margin:    40px;
                 object-fit: contain;
                 box-shadow: 0 5px 34px rgba($color: #000000, $alpha: 0.2);
                 z-index: $layer-fourth-z-index;
+                &:hover{
+                    cursor: pointer;
+                }
             }
         }        
     }

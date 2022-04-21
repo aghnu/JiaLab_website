@@ -61,16 +61,17 @@ transparent_navi: true
                 </div>
             </div>
         </div>
-
-        <div class="page-research-block-gallery">
-            {% for figure in site.data.research_page_figure_index %}
-            <div class="section">
-                <div class="figure_container">
-                    <img src="{{figure.source}}" title="{{figure.caption}}" class="figure">    
-                </div>
-                <p class="title">{{figure.title}}</p>
-            </div>  
-            {% endfor %}
+        <div class="gallery_outter_container">
+            <div class="page-research-block-gallery">
+                {% for figure in site.data.research_page_figure_index %}
+                <div class="section">
+                    <div class="figure_container">
+                        <img src="{{figure.source}}" title="{{figure.caption}}" class="figure">    
+                    </div>
+                    <p class="title">{{figure.title}}</p>
+                </div>  
+                {% endfor %}
+            </div>
         </div>
     </div>
 </div>
@@ -186,6 +187,34 @@ transparent_navi: true
             JSGallery_button_right.onclick = () => {
                 figure_index = (figure_index + 1)%figure_list.length;
                 update_figures();
+            }
+
+            // modal
+            const JSGallery_outter_container = document.querySelector(".gallery_outter_container");
+            const JSGallery_close_button = document.createElement("button");
+            JSGallery_close_button.classList.add("gallery-close-button");
+
+            JSGallery.appendChild(JSGallery_close_button);
+
+            
+
+            const open_modal = () => {
+                JSGallery_outter_container.classList.add("modal");
+                center_figures();
+                JSGallery_middle.onclick = () => {};
+            }
+
+            const close_modal = () => {
+                JSGallery_outter_container.classList.remove("modal");
+                center_figures();
+            }
+
+
+            JSGallery_middle.onclick = open_modal;
+
+            JSGallery_close_button.onclick = () => {
+                close_modal();
+                JSGallery_middle.onclick = open_modal;
             }
             
             update_figures();
