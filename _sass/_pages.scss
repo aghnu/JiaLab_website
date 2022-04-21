@@ -161,6 +161,38 @@ $publication-mobile-page-navigation-item-color:         #000000;
 $publication-mobile-page-navigation-item-color-hover:   #55D7B8;
 $publication-mobile-page-navigation-item-size:          20px;
 
+
+// side panel
+$side-panel-width:      50px;
+$side-panel-margin:    20px;
+
+.page-research-side-panel {
+    width: $content-width-ratio;
+    max-width: $max-content-width;
+    min-width: calc(#{$min-content-width} - 50px);
+    margin: auto;
+    position: relative;
+    // left: 0;
+    .side-panel {
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        width: $side-panel-width;
+        right: calc(-#{$side-panel-width} - #{$side-panel-margin});
+    }
+    .news {
+
+    }
+    .contact_panel {
+        .icon {
+
+        }
+
+        p {
+
+        }
+    }
+}
 .page-research-block-banner {
     overflow: hidden;
 
