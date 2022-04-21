@@ -401,7 +401,7 @@ $side-panel-margin:    40px;
     .figure_container {
         margin-top: calc(100vh * 0.05);
         .gallery-container {
-            height: calc(100vh * 0.6);
+            height: calc(100vh * 0.5);
             justify-content: center;
             &.g-left img, 
             &.g-right img {
@@ -424,7 +424,7 @@ $side-panel-margin:    40px;
     .gallery-title-container {
         width: 80%;
         margin: auto;
-        margin-top: calc(100vh * 0.05);
+        margin-top: calc(100vh * 0.025);
         margin-bottom: 0;
         height: $gallery_figure_title_height;
         p {
@@ -507,13 +507,13 @@ $side-panel-margin:    40px;
             cursor: pointer;
         }
         &.b-left {
-            top: 50%;
+            top: 40%;
             left: 0;
             background-image: url("../svg/gallery_button_left_icon.svg");
         }
 
         &.b-right {
-            top: 50%;
+            top: 40%;
             right: 0;
             background-image: url("../svg/gallery_button_right_icon.svg");
         }
