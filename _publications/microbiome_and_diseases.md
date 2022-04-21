@@ -4,9 +4,9 @@ query_id: "microbiome_and_diseases"
 index: 3
 ---
 
-1.Wang Q#, Sun Q#, Li X#, Wang Z#, Zheng H, Ju Y, Guo R, Peng S*, Jia H*. Linking gut microbiome to bone mineral density: a shotgun        metagenomic dataset from 361 elderly women. Gigabyte, 2021, 1. https://doi.org/10.46471/gigabyte.12.
+1.Wang Q#, Sun Q#, Li X#, Wang Z#, Zheng H, Ju Y, Guo R, Peng S*, Jia H*. Linking gut microbiome to bone mineral density: a shotgun        metagenomic dataset from 361 elderly women. Gigabyte, 2021, 1. [https://doi.org/10.46471/gigabyte.12](https://doi.org/10.46471/gigabyte.12).
 
-2.Chen C#, Hao L#, Wei W#, Li F#, Song L, Zhang X, Dai J, Jie Z, Li J, Song X, Wang Z, Zhang Z, Zeng L, Du H, Tang H, Zhang T, Yang H, Wang J, Brix S, Kristiansen K, Xu X, Wu R*, Jia H*. The female urinary microbiota in relation to the reproductive tract microbiota. Gigabyte, 2020, 1. https://doi.org/10.46471/gigabyte.9.
+2.Chen C#, Hao L#, Wei W#, Li F#, Song L, Zhang X, Dai J, Jie Z, Li J, Song X, Wang Z, Zhang Z, Zeng L, Du H, Tang H, Zhang T, Yang H, Wang J, Brix S, Kristiansen K, Xu X, Wu R*, Jia H*. The female urinary microbiota in relation to the reproductive tract microbiota. Gigabyte, 2020, 1. [https://doi.org/10.46471/gigabyte.9](https://doi.org/10.46471/gigabyte.9).
 
 3.Zhu F#, Ju Y#, Wang W#, Wang Q#, Guo R#, Ma Q, Sun Q, Fan Y, Xie Y, Yang Z, Jie Z, Zhao B, Xiao L, Yang L, Zhang T, Feng J, Guo L, He X, Chen Y, Chen C, Gao C, Xu X, Yang H, Wang J, Dang Y, Madsen L, Brix S, Kristiansen K*, Jia H*, Ma X*. Metagenome-wide association of gut microbiome features for schizophrenia. Nature Commun, 2020, 11(1): 1612.
 

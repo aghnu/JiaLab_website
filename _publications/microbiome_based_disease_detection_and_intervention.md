@@ -10,7 +10,7 @@ index: 5
 
 3.Jie Z#,*, Liang S#, Ding Q#, Li F, Tang S, Wang D, Lin Y, Chen P, Cai K, Qiu X, Li Q, Liao Y, Zhou D, Lian H, Zuo Y, Chen X, Rao W, Ren Y, Wang Y, Zi J, Wang R, Zhou H, Lu H, Wang X, Zhao W, Zhao T, Xiao L, Zong Y, Liu W, Yang H, Wang J, Hou Y, Liu X, Kristiansen K, Zhong H, Jia H*, Xu X*. A transomic cohort as a reference point for promoting a healthy gut microbiome. Med Microecol 2021. Link-doi.org/10.1016/j.medmic.2021.100039
 
-4.Chen C#, Hao L#, Zhang Z#, Tian L, Song L, Zhang X, Jie Z, Tong X, Xiao L, Zhang T, Jin X, Xu X, Yang H, Wang J, Kristiansen K, Jia H*. Vaginal-cervical microbiome dynamics after oral probiotics. Journal of Genetics and Genomics, https://doi.org/10.1101/2020.06.16.155929
+4.Chen C#, Hao L#, Zhang Z#, Tian L, Song L, Zhang X, Jie Z, Tong X, Xiao L, Zhang T, Jin X, Xu X, Yang H, Wang J, Kristiansen K, Jia H*. Vaginal-cervical microbiome dynamics after oral probiotics. Journal of Genetics and Genomics, [https://doi.org/10.1101/2020.06.16.155929]( https://doi.org/10.1101/2020.06.16.155929)
 
 5.Jie Z#, Chen C#,*, Hao L, Li F, Song L, Zhang X, Zhu J, Tian L, Tong X, Cai K, Zhang Z, Ju Y, Yu X, Li Y, Zhou H, Lu H, Qiu X, Li Q, Liao Y, Zhou D, Lian H, Zuo Y, Chen X, Rao W, Ren Y, Wang Y, Zi J, Wang R, Liu N, Wu J, Zhang W, Liu X, Zong Y, Liu W, Xiao L, Hou Y, Xu X, Yang H, Wang J, Kristiansen K, Jia H*. Life History Recorded in the Vagino-cervical Microbiome Along with Multi-omics. Genomics Proteomics Bioinformatics. 2021, S1672-0229(21)00099-1. Link-doi.org/10.1016/j.gpb.2021.01.005
 
