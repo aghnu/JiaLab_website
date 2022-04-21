@@ -64,42 +64,48 @@ transparent_navi: true
 
         // create html DOM elements for JSGallery
         const JSGallery = document.createElement("div");
+        JSGallery.classList.add("page-research-block-gallery-js");
         
         const JSGallery_title_container = document.createElement("div");
-
         const JSGallery_figure_container = document.createElement("div");
+        JSGallery_title_container.classList.add("gallery-title-container");
+        JSGallery_figure_container.classList.add("figure_container");
+        
         const JSGallery_left = document.createElement("div");
         const JSGallery_right = document.createElement("div");
         const JSGallery_middle = document.createElement("div");
-
-        const JSGallery_button_left = document.createElement('button');
-        const JSGallery_button_right = document.createElement('button');
-
-        JSGallery.classList.add("page-research-block-gallery-js");
-        
-        JSGallery_title_container.classList.add("gallery-title-container");
-
         JSGallery_left.classList.add("gallery-container");
         JSGallery_right.classList.add("gallery-container");
         JSGallery_middle.classList.add("gallery-container");
         JSGallery_left.classList.add("g-left");
         JSGallery_right.classList.add("g-right");
         JSGallery_middle.classList.add("g-middle");
-        JSGallery_figure_container.classList.add("figure_container");
 
+        const JSGallery_fade_left = document.createElement('div');
+        const JSGallery_fade_right = document.createElement('div');
+        JSGallery_fade_left.classList.add("gallery-fade");
+        JSGallery_fade_right.classList.add("gallery-fade");
+        JSGallery_fade_left.classList.add("f-left");
+        JSGallery_fade_right.classList.add("f-right");
+
+        const JSGallery_button_left = document.createElement('button');
+        const JSGallery_button_right = document.createElement('button');
         JSGallery_button_left.classList.add("gallery-button");
         JSGallery_button_right.classList.add("gallery-button");
         JSGallery_button_left.classList.add("b-left");
         JSGallery_button_right.classList.add("b-right");
 
+        // construct DOM
         JSGallery_figure_container.appendChild(JSGallery_left);
         JSGallery_figure_container.appendChild(JSGallery_middle);
         JSGallery_figure_container.appendChild(JSGallery_right);
 
         JSGallery.appendChild(JSGallery_figure_container);
-
+        JSGallery.appendChild(JSGallery_title_container);
         JSGallery.appendChild(JSGallery_button_left);
         JSGallery.appendChild(JSGallery_button_right);
+        JSGallery.appendChild(JSGallery_fade_left);
+        JSGallery.appendChild(JSGallery_fade_right);
 
         // replace old gallery
         gallery.parentElement.insertBefore(JSGallery, gallery);
@@ -147,6 +153,8 @@ transparent_navi: true
                 JSGallery_middle.appendChild(figure_list[figure_index].figure_element);
                 JSGallery_right.appendChild(figure_list[(figure_index+1)%figure_list.length].figure_element);  
                 center_figures(); 
+
+                JSGallery_title_container.append(figure_list[figure_index].title_element);
             }
 
             window.addEventListener('resize', center_figures);

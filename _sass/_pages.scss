@@ -35,15 +35,15 @@ $banner-mobile-button-radius:                   21px !default;
 $banner-mobile-button-margin-top:               15px !default;
 $banner-mobile-button-text-size:                18px !default;
 
-$gallery_figure_height:                 385px;
-$gallery_section_padding:               30px;
-$gallery_figure_title_height:           100px;
-$gallery_figure_title-size:             16px;
+$gallery_figure_height:                         340px;
+$gallery_section_padding:                       30px;
+$gallery_figure_title_height:                   100px;
+$gallery_figure_title-size:                     16px;
 
-$gallery_mobile_figure_height:          308px;
-$gallery_mobile_section_padding:        24px;
-$gallery_mobile_figure_title_height:    80px;
-$gallery_mobile_figure_title-size:      13px;
+$gallery_mobile_figure_height:                  308px;
+$gallery_mobile_section_padding:                24px;
+$gallery_mobile_figure_title_height:            80px;
+$gallery_mobile_figure_title-size:              13px;
 
 // research info
 $research-info-gap:                             25px !default;
@@ -94,72 +94,72 @@ $team-group-section-width:                      calc(#{$team-profile-pic-size-te
 
 
 // team page mobile
-$team-mobile-profile-pic-size-faculty:                 180px;
-$team-mobile-profile-pic-size-team:                    110px;
+$team-mobile-profile-pic-size-faculty:                  180px;
+$team-mobile-profile-pic-size-team:                     110px;
 
-$team-mobile-block-gap:                                40px;
+$team-mobile-block-gap:                                 40px;
 
-$team-mobile-page-separator-width:                     1px;
-$team-mobile-page-separator-color:                     #B6B6B6;
+$team-mobile-page-separator-width:                      1px;
+$team-mobile-page-separator-color:                      #B6B6B6;
 
-$team-mobile-faculty-info-title-size:                  28px;
-$team-mobile-faculty-info-title-weight:                600;
-$team-mobile-faculty-info-figure-margin-right:         30px;
+$team-mobile-faculty-info-title-size:                   28px;
+$team-mobile-faculty-info-title-weight:                 600;
+$team-mobile-faculty-info-figure-margin-right:          30px;
 
-$team-mobile-group-label-size:                         28px;
-$team-mobile-group-label-weight:                       600;
-$team-mobile-group-profile-gap:                        50px;
-$team-mobile-group-profile-gap-row:                    40px;
+$team-mobile-group-label-size:                          28px;
+$team-mobile-group-label-weight:                        600;
+$team-mobile-group-profile-gap:                         50px;
+$team-mobile-group-profile-gap-row:                     40px;
 
 // resource page
-$resource-page-title-size:                      28px;
-$resource-page-title-weight:                    600;
+$resource-page-title-size:                              28px;
+$resource-page-title-weight:                            600;
 
-$resource-page-text-size:                       $base-font-size;
+$resource-page-text-size:                               $base-font-size;
 
-$resource-page-block-gap:                       60px;
+$resource-page-block-gap:                               60px;
 
 
 // resource page mobile
-$resource-mobile-page-title-size:                      28px;
-$resource-mobile-page-title-weight:                    600;
+$resource-mobile-page-title-size:                       28px;
+$resource-mobile-page-title-weight:                     600;
 
-$resource-mobile-page-text-size:                       $base-font-size;
-$resource-mobile-page-block-gap:                       60px;
+$resource-mobile-page-text-size:                        $base-font-size;
+$resource-mobile-page-block-gap:                        60px;
 
 
 // publication page
-$publication-page-title-size:                   28px;
-$publication-page-title-weight:                 600;
-$publication-page-title-color:                  #000000;
+$publication-page-title-size:                           28px;
+$publication-page-title-weight:                         600;
+$publication-page-title-color:                          #000000;
 
 
-$publication-page-text-size:                    16px;
+$publication-page-text-size:                            16px;
 
-$publication-page-block-gap:                    60px;
+$publication-page-block-gap:                            60px;
 
-$publication-page-navigation-height:            220px;
-$publication-page-navigation-background:        #E7E7E7;
-$publication-page-navigation-item-color:        #000000;
-$publication-page-navigation-item-color-hover:  #55D7B8;
-$publication-page-navigation-item-size:         20px;
-$publication-scroll-margin-top:                 140px + $publication-page-navigation-height;
+$publication-page-navigation-height:                    220px;
+$publication-page-navigation-background:                #E7E7E7;
+$publication-page-navigation-item-color:                #000000;
+$publication-page-navigation-item-color-hover:          #55D7B8;
+$publication-page-navigation-item-size:                 20px;
+$publication-scroll-margin-top:                         140px + $publication-page-navigation-height;
 
 // publication page
-$publication-mobile-page-title-size:                   28px;
-$publication-mobile-page-title-weight:                 700;
-$publication-mobile-page-title-color:                  #000000;
-$publication-mobile-page-cata-gap:                     10px !default;
+$publication-mobile-page-title-size:                    28px;
+$publication-mobile-page-title-weight:                  700;
+$publication-mobile-page-title-color:                   #000000;
+$publication-mobile-page-cata-gap:                      10px !default;
 
-$publication-mobile-page-text-size:                    16px;
+$publication-mobile-page-text-size:                     16px;
 
-$publication-mobile-page-block-gap:                    36px;
-$publication-mobile-scroll-margin-top:                 140px !default;
+$publication-mobile-page-block-gap:                     36px;
+$publication-mobile-scroll-margin-top:                  140px !default;
 
-$publication-mobile-page-navigation-background:        #E7E7E7;
-$publication-mobile-page-navigation-item-color:        #000000;
-$publication-mobile-page-navigation-item-color-hover:  #55D7B8;
-$publication-mobile-page-navigation-item-size:         20px;
+$publication-mobile-page-navigation-background:         #E7E7E7;
+$publication-mobile-page-navigation-item-color:         #000000;
+$publication-mobile-page-navigation-item-color-hover:   #55D7B8;
+$publication-mobile-page-navigation-item-size:          20px;
 
 .page-research-block-banner {
     overflow: hidden;
@@ -289,12 +289,39 @@ $publication-mobile-page-navigation-item-size:         20px;
     height: 436px;
     width: 100%;
     position: relative;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .gallery-fade {
+        height: 100%;
+        width: 40px;
+        position: absolute; 
+        z-index: $layer-fourth-z-index; 
+        &.f-left {
+            left: 0;
+            background-image: linear-gradient(to left, rgba($color: #fff, $alpha: 0), rgba($color: #fff, $alpha: 1));
+        }
+        &.f-right {
+            right: 0;
+            background-image: linear-gradient(to right, rgba($color: #fff, $alpha: 0), rgba($color: #fff, $alpha: 1));
+
+        }
+    }
+
     .gallery-button {
         height: 100px;
         width: 60px;
         background-size: cover;
         position: absolute;
         transform: translate(0%, -50%);
+        background: transparent;
+        border: none;
+        z-index: $layer-third-z-index;
+        &:hover {
+            cursor: pointer;
+        }
         &.b-left {
             top: 50%;
             left: 0;
@@ -307,33 +334,43 @@ $publication-mobile-page-navigation-item-size:         20px;
             background-image: url("../svg/gallery_button_right_icon.svg");
         }
     }
+    
+    .gallery-title-container {
+        width: 50%;
+        margin: auto;
+        height: $gallery_figure_title_height;
+        p {
+            text-align: left;
+            width: 100%;
+            word-wrap: normal;
+        }
+
+    }
+
     .figure_container {
         display: flex;
         width: max-content;
         position: relative;
-        transition: 1s;
         .gallery-container {
-            margin: 20px;
+            margin: 10px;
             height: $gallery_figure_height;
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            transition: 1s;
-            img {
-                transition: 1s;
-                box-shadow: 0 5px 34px rgba($color: #000000, $alpha: 0.2);
-            }
+            justify-content: flex-end;
+
             &.g-left img {
-                height: 80%;
+                height: 85%;
                 object-fit: contain;
             }
             &.g-right img {
-                height: 80%;
+                height: 85%;
                 object-fit: contain;
             }
             &.g-middle img {
                 height: 100%;
                 object-fit: contain;
+                box-shadow: 0 5px 34px rgba($color: #000000, $alpha: 0.2);
+                z-index: $layer-fourth-z-index;
             }
         }        
     }
