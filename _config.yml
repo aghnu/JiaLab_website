@@ -34,6 +34,7 @@ phone: 0571-2354758834
 collections:
   - publications
   - staff
+  - news
 
 sass:
     sass_dir: _sass
