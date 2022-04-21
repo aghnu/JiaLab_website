@@ -424,9 +424,9 @@ $research-gallery-button-height:                        100px;
     }
 
     .figure_container {
-        margin-top: calc(100vh * $research-gallery-modal-figure-margin-top-ratio);
+        margin-top: calc(100vh * #{$research-gallery-modal-figure-margin-top-ratio});
         .gallery-container {
-            height: calc(100vh * $research-gallery-modal-figure-height-ratio);
+            height: calc(100vh * #{$research-gallery-modal-figure-height-ratio});
             justify-content: center;
             &.g-left img, 
             &.g-right img {
@@ -449,7 +449,7 @@ $research-gallery-button-height:                        100px;
     .gallery-title-container {
         width: 80%;
         margin: auto;
-        margin-top: calc(100vh * $research-gallery-modal-title-margin-top-ratio);
+        margin-top: calc(100vh * #{$research-gallery-modal-title-margin-top-ratio});
         margin-bottom: 0;
         height: $gallery_figure_title_height;
         p {
@@ -587,17 +587,6 @@ $research-gallery-button-height:                        100px;
             }
         }        
     }
- 
-
-    // .JSGallery_title_container {
-    //     position: absolute;
-    //     width: 100%;
-    //     height: $gallery_figure_title_height;
-    //     bottom: 0;
-    //     left: 0;
-    //     transform: translate(0%, -100%);
-    // }
-
 }
 
 // team page
