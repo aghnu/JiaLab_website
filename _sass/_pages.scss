@@ -288,7 +288,6 @@ $publication-mobile-page-navigation-item-size:         20px;
 .page-research-block-gallery-js {
     height: 436px;
     width: 100%;
-    display: flex;
     position: relative;
     .gallery-button {
         height: 100px;
@@ -308,25 +307,37 @@ $publication-mobile-page-navigation-item-size:         20px;
             background-image: url("../svg/gallery_button_right_icon.svg");
         }
     }
-
-    .gallery-container {
-        margin: 30px;
-        width: calc(100% / 3);
-        img {
-            height: 385px;
-            width: 100%;
-            object-fit: contain;
-        }
-        &.g-left {
-
-        }
-        &.g-right {
-
-        }
-        &.g-middle {
-
-        }
+    .figure_container {
+        display: flex;
+        width: max-content;
+        position: relative;
+        transition: 1s;
+        .gallery-container {
+            margin: 20px;
+            height: $gallery_figure_height;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            transition: 1s;
+            img {
+                transition: 1s;
+                box-shadow: 0 5px 34px rgba($color: #000000, $alpha: 0.2);
+            }
+            &.g-left img {
+                height: 80%;
+                object-fit: contain;
+            }
+            &.g-right img {
+                height: 80%;
+                object-fit: contain;
+            }
+            &.g-middle img {
+                height: 100%;
+                object-fit: contain;
+            }
+        }        
     }
+ 
 
     // .JSGallery_title_container {
     //     position: absolute;

@@ -67,6 +67,7 @@ transparent_navi: true
         
         const JSGallery_title_container = document.createElement("div");
 
+        const JSGallery_figure_container = document.createElement("div");
         const JSGallery_left = document.createElement("div");
         const JSGallery_right = document.createElement("div");
         const JSGallery_middle = document.createElement("div");
@@ -84,17 +85,18 @@ transparent_navi: true
         JSGallery_left.classList.add("g-left");
         JSGallery_right.classList.add("g-right");
         JSGallery_middle.classList.add("g-middle");
+        JSGallery_figure_container.classList.add("figure_container");
 
         JSGallery_button_left.classList.add("gallery-button");
         JSGallery_button_right.classList.add("gallery-button");
         JSGallery_button_left.classList.add("b-left");
         JSGallery_button_right.classList.add("b-right");
 
-        JSGallery.appendChild(JSGallery_left);
-        JSGallery.appendChild(JSGallery_middle);
-        JSGallery.appendChild(JSGallery_right);
+        JSGallery_figure_container.appendChild(JSGallery_left);
+        JSGallery_figure_container.appendChild(JSGallery_middle);
+        JSGallery_figure_container.appendChild(JSGallery_right);
 
-        // JSGallery.appendChild(JSGallery_title_container);
+        JSGallery.appendChild(JSGallery_figure_container);
 
         JSGallery.appendChild(JSGallery_button_left);
         JSGallery.appendChild(JSGallery_button_right);
@@ -123,25 +125,44 @@ transparent_navi: true
         // state
         // NOTE: will not consider the case where total number of figure is less than 3
         // future feature?
-        let figure_index = 0;
+        window.addEventListener('load', () => {
+            let figure_index = 0;
 
-        const update_figures = (middle_index) => {
-            clear_figures();
-            JSGallery_left.appendChild(figure_list[((middle_index-1)+figure_list.length)%figure_list.length].figure_element);
-            JSGallery_middle.appendChild(figure_list[middle_index].figure_element);
-            JSGallery_right.appendChild(figure_list[(middle_index+1)%figure_list.length].figure_element);            
-        }
+            const center_figures = () => {
 
-        update_figures(figure_index);
+                const gallery_width_margin = (JSGallery_figure_container.offsetWidth - (JSGallery_left.offsetWidth + JSGallery_middle.offsetWidth + JSGallery_right.offsetWidth)) / 6;
 
-        JSGallery_button_left.onclick = () => {
-            figure_index = ((figure_index - 1)+figure_list.length) % figure_list.length;
-            update_figures(figure_index);
-        };
-        JSGallery_button_right.onclick = () => {
-            figure_index = (figure_index + 1)%figure_list.length;
-            update_figures(figure_index);
-        }
+                const gallery_left_width_outter= JSGallery_left.offsetWidth + gallery_width_margin * 2;
+                const gallery_middle_width_outter= JSGallery_middle.offsetWidth + gallery_width_margin * 2;
+                const gallery_right_width_outter= JSGallery_right.offsetWidth + gallery_width_margin * 2;
+
+
+                const gallery_offset =  (JSGallery.offsetWidth / 2) - (gallery_left_width_outter + (gallery_middle_width_outter / 2));
+                JSGallery_figure_container.style.left = Math.round(gallery_offset).toString() + "px";
+            }
+
+            const update_figures = () => {
+                clear_figures();
+                JSGallery_left.appendChild(figure_list[((figure_index-1)+figure_list.length)%figure_list.length].figure_element);
+                JSGallery_middle.appendChild(figure_list[figure_index].figure_element);
+                JSGallery_right.appendChild(figure_list[(figure_index+1)%figure_list.length].figure_element);  
+                center_figures(); 
+            }
+
+            window.addEventListener('resize', center_figures);
+
+            JSGallery_button_left.onclick = () => {
+                figure_index = ((figure_index - 1)+figure_list.length) % figure_list.length;
+                update_figures();
+            };
+            JSGallery_button_right.onclick = () => {
+                figure_index = (figure_index + 1)%figure_list.length;
+                update_figures();
+            }
+            
+            update_figures();
+        });
+
 
     });
 
