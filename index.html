@@ -8,7 +8,7 @@ transparent_navi: true
 
 <div class="page-research">
     <div class="page-research-block-banner">
-        <div class="banner-background">
+        <div class="banner-background css-controlled">
             <div class="content-wrapper">
                 <div class="banner-info-container">
                     <p class="title">We use state-of-the-art OMICS technologies to understand the human microbiome</p>
@@ -79,6 +79,13 @@ transparent_navi: true
 <script>
     // optional script for additional functionalities
 
+    // window.addEventListener('load', () => {
+    //     const banner_background = document.querySelector(".banner-background");
+    //     const backgroundURL = ["url(/assets/img/background_1.jpg)","url(/assets/img/background_2.jpg)","url(/assets/img/background_3.jpg)"];
+    //     banner_background.style.backgroundImage = backgroundURL[Math.floor(Math.random() * 3)];
+    // });
+
+
     window.addEventListener('DOMContentLoaded', () => {
         
         const gallery = document.querySelector('.page-research-block-gallery');
@@ -148,6 +155,11 @@ transparent_navi: true
         }
         clear_figures();
  
+
+        const banner_background = document.querySelector(".banner-background");
+        banner_background.classList.remove("css-controlled");
+        const backgroundURL = ["url(/assets/img/background_1.jpg)","url(/assets/img/background_2.jpg)","url(/assets/img/background_3.jpg)"];
+        banner_background.style.backgroundImage = backgroundURL[Math.floor(Math.random() * 3)];
 
         // state
         // NOTE: will not consider the case where total number of figure is less than 3

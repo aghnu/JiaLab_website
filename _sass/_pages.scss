@@ -291,9 +291,12 @@ $research-gallery-button-height:                        100px;
     .banner-background {
         width: 100%;
         height: $banner-size-height;
-        background-image: url("../img/background_1.jpg");
+        
         background-size: cover;
         display: flex;
+        &.css-controlled {
+            background-image: url("../img/background_1.jpg");
+        }
     }
 
     .content-wrapper {
@@ -805,7 +808,6 @@ $research-gallery-button-height:                        100px;
     // research page banner
     .page-research-block-banner {
         .banner-background {
-            background-image: url("../img/background_3.jpg");
             height: $banner-mobile-size-height;
         }
 
