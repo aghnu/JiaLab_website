@@ -12,7 +12,7 @@ index: 5
 
 4.Chen C#, Hao L#, Zhang Z#, Tian L, Song L, Zhang X, Jie Z, Tong X, Xiao L, Zhang T, Jin X, Xu X, Yang H, Wang J, Kristiansen K, Jia H*. Vaginal-cervical microbiome dynamics after oral probiotics. Journal of Genetics and Genomics, [https://doi.org/10.1101/2020.06.16.155929]( https://doi.org/10.1101/2020.06.16.155929)
 
-5.Jie Z#, Chen C#,*, Hao L, Li F, Song L, Zhang X, Zhu J, Tian L, Tong X, Cai K, Zhang Z, Ju Y, Yu X, Li Y, Zhou H, Lu H, Qiu X, Li Q, Liao Y, Zhou D, Lian H, Zuo Y, Chen X, Rao W, Ren Y, Wang Y, Zi J, Wang R, Liu N, Wu J, Zhang W, Liu X, Zong Y, Liu W, Xiao L, Hou Y, Xu X, Yang H, Wang J, Kristiansen K, Jia H*. Life History Recorded in the Vagino-cervical Microbiome Along with Multi-omics. Genomics Proteomics Bioinformatics. 2021, S1672-0229(21)00099-1. [doi.org/10.1016/j.gpb.2021.01.005](doi.org/10.1016/j.gpb.2021.01.005)
+5.Jie Z#, Chen C#,*, Hao L, Li F, Song L, Zhang X, Zhu J, Tian L, Tong X, Cai K, Zhang Z, Ju Y, Yu X, Li Y, Zhou H, Lu H, Qiu X, Li Q, Liao Y, Zhou D, Lian H, Zuo Y, Chen X, Rao W, Ren Y, Wang Y, Zi J, Wang R, Liu N, Wu J, Zhang W, Liu X, Zong Y, Liu W, Xiao L, Hou Y, Xu X, Yang H, Wang J, Kristiansen K, Jia H*. Life History Recorded in the Vagino-cervical Microbiome Along with Multi-omics. Genomics Proteomics Bioinformatics. 2021, S1672-0229(21)00099-1. [doi.org/10.1016/j.gpb.2021.01.005](https://www.doi.org/10.1016/j.gpb.2021.01.005)
 
 6.Jie Z, Yu X, Liu Y, Sun L, Chen P, Ding Q, Gao Y, Zhang X, Yu M, Liu Y, Zhang Y, Kristiansen K, Jia H, Brix S, Cai K. The baseline gut microbiota directs dieting-induced weight loss trajectories. Gastroenterology. 2021, 160(6):2029-2042.e16.
 
